@@ -12,6 +12,8 @@
 		E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */; };
 		E0515CAE278B48A100A8BB6F /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0515CAD278B48A100A8BB6F /* Users.swift */; };
 		E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */; };
+		E0C698B4278B5471004E40BE /* Current_Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C698B3278B5471004E40BE /* Current_Time.swift */; };
+		E0C698B6278B5D88004E40BE /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C698B5278B5D88004E40BE /* Information.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0515CAD278B48A100A8BB6F /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_Page.swift; sourceTree = "<group>"; };
+		E0C698B3278B5471004E40BE /* Current_Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current_Time.swift; sourceTree = "<group>"; };
+		E0C698B5278B5D88004E40BE /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				E0515CAD278B48A100A8BB6F /* Users.swift */,
+				E0C698B3278B5471004E40BE /* Current_Time.swift */,
+				E0C698B5278B5D88004E40BE /* Information.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +164,8 @@
 			files = (
 				E0515CAE278B48A100A8BB6F /* Users.swift in Sources */,
 				E0515C9F278B44CC00A8BB6F /* Peiyang_BoardApp.swift in Sources */,
+				E0C698B4278B5471004E40BE /* Current_Time.swift in Sources */,
+				E0C698B6278B5D88004E40BE /* Information.swift in Sources */,
 				E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
