@@ -24,13 +24,21 @@ struct Main_Page: View {
 func Head_view()->some View{
     HStack(){
         VStack{
-            Text("\(time.month)月\(time.day)日")
-                .font(.system(size: 40))
-                .foregroundColor(Color("Main_Font"))
-                .position(x: 100, y: 40)
+            ZStack{
+                Text("\(time.month)月\(time.day)日")
+                    .font(.system(size: 40))
+                    .foregroundColor(Color("Main_Font"))
+                    .position(x: 100, y: 40)
+                
+                Image(systemName: "sun.max")
+                    .rotationEffect(Angle.init(degrees: -5))
+                    .font(.system(size: 30))
+                    .position(x: 178, y: 15)
+                    
+            }
             Path{path in
-                path.move(to: CGPoint(x: 35, y: 30))
-                path.addLine(to: CGPoint(x: 163, y: 30))
+                path.move(to: CGPoint(x: 35, y: 25))
+                path.addLine(to: CGPoint(x: 163, y: 25))
                 
             }
             .strokedPath(StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round))
@@ -38,14 +46,14 @@ func Head_view()->some View{
             
             HStack{
                 Text("总消息数")
-                    .font(.system(size: 20))
+                    .font(.system(size: 18))
                     .foregroundColor(Color("Main_Font"))
-                    .position(x: 70, y: 5)
+                    .position(x: 70, y: 0)
                 
                 Text("\(Information.count)")
                     .font(.system(size: 20))
                     .foregroundColor(Color("Main_Font"))
-                    .position(x: 60, y: 5)
+                    .position(x: 55, y: 0)
             }
         }
         HStack{
@@ -59,7 +67,18 @@ func Head_view()->some View{
                     .resizable()
                     .frame(width: 60, height: 60)
                     .clipShape(Circle())
-                    .position(x: 120, y: 50)
+                    .position(x: 123, y: 50)
+                    .shadow(color: Color.gray, radius: 10, x: 5, y: 5)
+                
+                ZStack{
+                    Circle()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(Color("Red_Dot"))
+                        .shadow(color: Color.gray, radius: 5, x: 3, y: 3)
+                    Text("\(Information.count)")
+                        .foregroundColor(Color("Red_Dot_Font"))
+                }
+                .position(x: 150, y: 20)
             }
         }
     }
