@@ -6,9 +6,41 @@
 //
 
 import SwiftUI
+import UIKit
+import Combine
+
+class TimeHelp {
+    
+    var canceller: AnyCancellable?
+        
+    //每次都新建一个计时器
+    func start(receiveValue: @escaping (() -> Void)) {
+        let timerPublisher = Timer
+            .publish(every: 1, on: .main, in: .common)
+            .autoconnect()
+        
+        self.canceller = timerPublisher.sink { date in
+            receiveValue()
+        }
+    }
+    
+    //暂停销毁计时器
+    func stop() {
+        canceller?.cancel()
+        canceller = nil
+    }
+}
+
 
 struct SplashView: View {
     @State private var isloading = false
+    @State private var isSplashing: Bool = true
+    @State var isPresented = false
+    let timer = Timer.publish(every: 1, on: .main, in: .common)
+    @State private var second = 5.0
+    private let timeHelper = TimeHelp()
+    @State private var end = true
+    
     var body: some View {
         VStack{
             Image("SplashView_Head")
@@ -40,6 +72,44 @@ struct SplashView: View {
             isloading = true
         }
         .ignoresSafeArea()
+        .onAppear()
+        {
+            guard self.end else {return}
+            self.end = false
+            self.second = 0
+            self.timeHelper.start {
+                // print(second)
+                if self.second > 1 {
+                    _ = self.second -= 1
+                }else{
+                    //暂停
+                    self.end = true
+                    self.timeHelper.stop()
+                    self.isPresented = true
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $isPresented) {
+            print("消失")
+        } content: {
+            Main_Page()
+        }
+        //end_splashing()
+        
+    }
+    
+    func end_splashing() {
+        let now = Date()
+        let timeInterval: TimeInterval = now.timeIntervalSince1970
+        let timeStamp = Int(timeInterval)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            // 结束splash
+            withAnimation(.easeInOut(duration: 3)){
+                isSplashing = false
+            }
+        }
+        Main_Page()
     }
 }
 

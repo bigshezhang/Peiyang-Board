@@ -80,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				E0C698B9278BE3A9004E40BE /* Tools */,
-				E0515CAF278B49AD00A8BB6F /* View */,
 				E0515CAC278B487E00A8BB6F /* Module */,
 				E0515CA2278B44CD00A8BB6F /* Assets.xcassets */,
 				E0515CA4278B44CD00A8BB6F /* Preview Content */,
@@ -104,13 +103,6 @@
 				E0C698BB278BE481004E40BE /* Home */,
 			);
 			path = Module;
-			sourceTree = "<group>";
-		};
-		E0515CAF278B49AD00A8BB6F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		E070ED7B278DDCF200478953 /* Weather */ = {
