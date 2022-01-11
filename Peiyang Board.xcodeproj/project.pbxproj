@@ -18,6 +18,8 @@
 		E0C698C0278BE4EB004E40BE /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C698BF278BE4EB004E40BE /* Storage.swift */; };
 		E0C698C2278BE4F5004E40BE /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C698C1278BE4F5004E40BE /* DataStorage.swift */; };
 		E0C698C4278BE504004E40BE /* SharedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C698C3278BE504004E40BE /* SharedMessage.swift */; };
+		E0D6D3DC278DB3110040D1C8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6D3DB278DB3110040D1C8 /* SplashView.swift */; };
+		E0D6D3DE278DB6200040D1C8 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0D6D3DD278DB6200040D1C8 /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		E0C698BF278BE4EB004E40BE /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		E0C698C1278BE4F5004E40BE /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		E0C698C3278BE504004E40BE /* SharedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedMessage.swift; sourceTree = "<group>"; };
+		E0D6D3DB278DB3110040D1C8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E0D6D3DD278DB6200040D1C8 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,8 @@
 		E0515C92278B44CC00A8BB6F = {
 			isa = PBXGroup;
 			children = (
+				E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */,
+				E0D6D3DD278DB6200040D1C8 /* View.xib */,
 				E0515C9D278B44CC00A8BB6F /* Peiyang Board */,
 				E0515C9C278B44CC00A8BB6F /* Products */,
 			);
@@ -85,10 +91,11 @@
 		E0515CAC278B487E00A8BB6F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				E0D6D3D6278DB1B60040D1C8 /* SplashView */,
 				E0C698BB278BE481004E40BE /* Home */,
 				E0515CAD278B48A100A8BB6F /* Users.swift */,
-				E0C698B3278B5471004E40BE /* Current_Time.swift */,
 				E0C698B5278B5D88004E40BE /* Information.swift */,
+				E0C698B3278B5471004E40BE /* Current_Time.swift */,
 				E0C698B7278B71E0004E40BE /* Weather.swift */,
 			);
 			path = Module;
@@ -97,7 +104,6 @@
 		E0515CAF278B49AD00A8BB6F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */,
 				E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */,
 			);
 			path = View;
@@ -118,6 +124,14 @@
 			children = (
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E0D6D3D6278DB1B60040D1C8 /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				E0D6D3DB278DB3110040D1C8 /* SplashView.swift */,
+			);
+			path = SplashView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */,
+				E0D6D3DE278DB6200040D1C8 /* View.xib in Resources */,
 				E0515CA3278B44CD00A8BB6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0515CAE278B48A100A8BB6F /* Users.swift in Sources */,
+				E0D6D3DC278DB3110040D1C8 /* SplashView.swift in Sources */,
 				E0C698C4278BE504004E40BE /* SharedMessage.swift in Sources */,
 				E0C698C0278BE4EB004E40BE /* Storage.swift in Sources */,
 				E0515C9F278B44CC00A8BB6F /* Peiyang_BoardApp.swift in Sources */,
