@@ -10,8 +10,6 @@ import SwiftUI
 struct SplashView: View {
     @State private var isloading = false
     var body: some View {
-        
-        
         VStack{
             Image("SplashView_Head")
                 .offset(y: isloading ? -150 : -0)
@@ -42,8 +40,6 @@ struct SplashView: View {
             isloading = true
         }
         .ignoresSafeArea()
-        
-        
     }
 }
 
