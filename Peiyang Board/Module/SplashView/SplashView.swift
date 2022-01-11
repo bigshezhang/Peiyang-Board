@@ -15,35 +15,31 @@ struct SplashView: View {
         VStack{
             Image("SplashView_Head")
                 .offset(y: isloading ? -150 : -0)
-                .animation(Animation.default.repeatForever(autoreverses: true))
+                .animation(Animation.default.delay(0.2))
             Spacer()
             Spacer()
             Spacer()
-            
             VStack{
                 Image("北洋看板")
                     .scaleEffect(0.93)
                     .padding(3)
+                    .onTapGesture {
+                        isloading = true
+                    }
                 Image("Peiyang Bulletin Board")
                     .scaleEffect(0.92)
             }
-            RoundedRectangle(cornerRadius: 3)
-                .stroke(Color.gray, lineWidth: 3)
-                .frame(width: 250, height: 3)
-            RoundedRectangle(cornerRadius: 3)
-                .stroke(Color.blue, lineWidth: 3)
-                .frame(width: 30, height: 3)
-                .offset(x: isloading ? -110 : 110 , y:0)
-                .animation(Animation.linear(duration: 1).repeatForever(autoreverses: true))
-                .offset(y: -11)
+            .opacity(isloading ? 0 : 1)
+            .animation(Animation.default.delay(0.6).speed(0.9))
+            .scaleEffect(isloading ? 20: 1)
+            .animation(Animation.default.delay(0).speed(0.1))
             Spacer()
             Image("SplashView_Foot")
-                .offset(y: isloading ? 200 : 0)
-                .animation(Animation.default.repeatForever(autoreverses: true))
+                .offset(y: isloading ? 300 : 0)
+                .animation(Animation.default.delay(0.1).speed(0.5))
         }
         .onAppear(){
             isloading = true
-            
         }
         .ignoresSafeArea()
         
