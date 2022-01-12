@@ -33,6 +33,7 @@ class TimeHelp {
 
 
 struct SplashView: View {
+
     @State private var isloading = false
     @State private var isSplashing: Bool = true
     @State var isPresented = false
@@ -42,62 +43,68 @@ struct SplashView: View {
     @State private var end = true
     
     var body: some View {
-        VStack{
-            Image("SplashView_Head")
-                .offset(y: isloading ? -150 : -0)
-                .animation(Animation.default.delay(0.2))
-            Spacer()
-            Spacer()
-            Spacer()
+        
+        if(isSplashing) {
             VStack{
-                Image("北洋看板")
-                    .scaleEffect(0.93)
-                    .padding(3)
-                    .onTapGesture {
-                        isloading = true
-                    }
-                Image("Peiyang Bulletin Board")
-                    .scaleEffect(0.92)
-            }
-            .opacity(isloading ? 0 : 1)
-            .animation(Animation.default.delay(0.6).speed(0.9))
-            .scaleEffect(isloading ? 20: 1)
-            .animation(Animation.default.delay(0).speed(0.1))
-            Spacer()
-            Image("SplashView_Foot")
-                .offset(y: isloading ? 300 : 0)
-                .animation(Animation.default.delay(0.1).speed(0.5))
-        }
-        .onAppear(){
-            isloading = true
-        }
-        .ignoresSafeArea()
-        .onAppear()
-        {
-            guard self.end else {return}
-            self.end = false
-            self.second = 0
-            self.timeHelper.start {
-                // print(second)
-                if self.second > 1 {
-                    _ = self.second -= 1
-                }else{
-                    //暂停
-                    self.end = true
-                    self.timeHelper.stop()
-                    self.isPresented = true
+                Image("SplashView_Head")
+                    .offset(y: isloading ? -150 : -0)
+                    .animation(Animation.default.delay(0.8).speed(0.5))
+                Spacer()
+                Spacer()
+                Spacer()
+                VStack{
+                    Image("北洋看板")
+                        .scaleEffect(0.93)
+                        .padding(3)
+                        .onTapGesture {
+                            isloading = true
+                        }
+                    Image("Peiyang Bulletin Board")
+                        .scaleEffect(0.92)
                 }
+                .opacity(isloading ? 0 : 1)
+                .scaleEffect(isloading ? 20: 1)
+                .animation(Animation.default.delay(0.3).speed(0.2))
+                Spacer()
+                Image("SplashView_Foot")
+                    .offset(y: isloading ? 300 : 0)
+                    .animation(Animation.default.delay(0.8).speed(0.5))
             }
-        }
-        .fullScreenCover(isPresented: $isPresented) {
-            print("消失")
-        } content: {
+            .onAppear(){
+                isloading = true
+            }
+            .ignoresSafeArea()
+            .onAppear(perform: end_splashing)
+        } else {
             Main_Page()
         }
-        //end_splashing()
         
     }
-    
+//        {
+            
+            
+            
+//            guard self.end else {return}
+//            self.end = false
+//            self.second = 3
+//            self.timeHelper.start {
+//                // print(second)
+//                if self.second > 1 {
+//                    _ = self.second -= 1
+//                }else{
+//                    //暂停
+//                    self.end = true
+//                    self.timeHelper.stop()
+//                    self.isPresented = true
+//                }
+//            }
+        
+//        .fullScreenCover(isPresented: $isPresented) {
+//        } content: {
+//            Main_Page()
+//        }
+        //end_splashing()
+
     func end_splashing() {
         let now = Date()
         let timeInterval: TimeInterval = now.timeIntervalSince1970
@@ -105,11 +112,10 @@ struct SplashView: View {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             // 结束splash
-            withAnimation(.easeInOut(duration: 3)){
+            withAnimation(.easeInOut(duration: 2)){
                 isSplashing = false
             }
         }
-        Main_Page()
     }
 }
 

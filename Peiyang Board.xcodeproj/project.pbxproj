@@ -14,12 +14,13 @@
 		E0888FAE278DE882009B5998 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FAC278DE882009B5998 /* Localizable.swift */; };
 		E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FAD278DE882009B5998 /* LocalizedKey_Extension.swift */; };
 		E0888FB2278DE92A009B5998 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FB1278DE92A009B5998 /* Network.swift */; };
+		E09866CA278E057A00383645 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09866C7278E057A00383645 /* Storage.swift */; };
+		E09866CB278E057A00383645 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09866C8278E057A00383645 /* DataStorage.swift */; };
+		E09866CC278E057A00383645 /* SharedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09866C9278E057A00383645 /* SharedMessage.swift */; };
+		E09866D0278E6FBB00383645 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09866CF278E6FBB00383645 /* SwiftUIView.swift */; };
 		E0A10B9E278DE9A700EC1D08 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10B9D278DE9A700EC1D08 /* Information.swift */; };
 		E0A10BA0278DE9AC00EC1D08 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10B9F278DE9AC00EC1D08 /* Users.swift */; };
 		E0A10BA8278DEAD900EC1D08 /* Current_Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10BA7278DEAD900EC1D08 /* Current_Time.swift */; };
-		E0A10BB9278DEC7B00EC1D08 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10BB6278DEC7B00EC1D08 /* Storage.swift */; };
-		E0A10BBA278DEC7B00EC1D08 /* SharedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10BB7278DEC7B00EC1D08 /* SharedMessage.swift */; };
-		E0A10BBB278DEC7B00EC1D08 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10BB8278DEC7B00EC1D08 /* DataStorage.swift */; };
 		E0D6D3DC278DB3110040D1C8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6D3DB278DB3110040D1C8 /* SplashView.swift */; };
 		E0D6D3DE278DB6200040D1C8 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0D6D3DD278DB6200040D1C8 /* View.xib */; };
 		E0DF9C4A278DE16F00B22E18 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF9C49278DE16F00B22E18 /* Weather.swift */; };
@@ -35,12 +36,13 @@
 		E0888FAC278DE882009B5998 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Localizable.swift; path = Localize/Localizable.swift; sourceTree = "<group>"; };
 		E0888FAD278DE882009B5998 /* LocalizedKey_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizedKey_Extension.swift; path = Localize/LocalizedKey_Extension.swift; sourceTree = "<group>"; };
 		E0888FB1278DE92A009B5998 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E09866C7278E057A00383645 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		E09866C8278E057A00383645 /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		E09866C9278E057A00383645 /* SharedMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedMessage.swift; sourceTree = "<group>"; };
+		E09866CF278E6FBB00383645 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		E0A10B9D278DE9A700EC1D08 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		E0A10B9F278DE9AC00EC1D08 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		E0A10BA7278DEAD900EC1D08 /* Current_Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current_Time.swift; sourceTree = "<group>"; };
-		E0A10BB6278DEC7B00EC1D08 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = "Peiyang Board/Tools/Storage/Storage.swift"; sourceTree = SOURCE_ROOT; };
-		E0A10BB7278DEC7B00EC1D08 /* SharedMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SharedMessage.swift; path = "Peiyang Board/Tools/Storage/SharedMessage.swift"; sourceTree = SOURCE_ROOT; };
-		E0A10BB8278DEC7B00EC1D08 /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStorage.swift; path = "Peiyang Board/Tools/Storage/DataStorage.swift"; sourceTree = SOURCE_ROOT; };
 		E0D6D3DB278DB3110040D1C8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E0D6D3DD278DB6200040D1C8 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		E0DF9C49278DE16F00B22E18 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		E0515C92278B44CC00A8BB6F = {
 			isa = PBXGroup;
 			children = (
+				E09866CF278E6FBB00383645 /* SwiftUIView.swift */,
 				E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */,
 				E0D6D3DD278DB6200040D1C8 /* View.xib */,
 				E0515C9D278B44CC00A8BB6F /* Peiyang Board */,
@@ -139,21 +142,20 @@
 			path = Time;
 			sourceTree = "<group>";
 		};
-		E0A10BAF278DEB0A00EC1D08 /* Storage */ = {
+		E09866C0278E052800383645 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				E0A10BB8278DEC7B00EC1D08 /* DataStorage.swift */,
-				E0A10BB7278DEC7B00EC1D08 /* SharedMessage.swift */,
-				E0A10BB6278DEC7B00EC1D08 /* Storage.swift */,
+				E09866C8278E057A00383645 /* DataStorage.swift */,
+				E09866C9278E057A00383645 /* SharedMessage.swift */,
+				E09866C7278E057A00383645 /* Storage.swift */,
 			);
-			name = Storage;
-			path = "New Group";
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		E0C698B9278BE3A9004E40BE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				E0A10BAF278DEB0A00EC1D08 /* Storage */,
+				E09866C0278E052800383645 /* Storage */,
 				E0888FB0278DE8A3009B5998 /* Time */,
 				E0888FA9278DE789009B5998 /* Localize */,
 				E0888FA6278DE702009B5998 /* Network */,
@@ -255,15 +257,16 @@
 				E0DF9C4A278DE16F00B22E18 /* Weather.swift in Sources */,
 				E0A10B9E278DE9A700EC1D08 /* Information.swift in Sources */,
 				E0A10BA0278DE9AC00EC1D08 /* Users.swift in Sources */,
-				E0A10BBB278DEC7B00EC1D08 /* DataStorage.swift in Sources */,
-				E0A10BB9278DEC7B00EC1D08 /* Storage.swift in Sources */,
+				E09866CA278E057A00383645 /* Storage.swift in Sources */,
+				E09866CC278E057A00383645 /* SharedMessage.swift in Sources */,
 				E0515C9F278B44CC00A8BB6F /* Peiyang_BoardApp.swift in Sources */,
-				E0A10BBA278DEC7B00EC1D08 /* SharedMessage.swift in Sources */,
 				E0A10BA8278DEAD900EC1D08 /* Current_Time.swift in Sources */,
 				E0DF9C4C278DE1C500B22E18 /* WeatherManager.swift in Sources */,
+				E09866CB278E057A00383645 /* DataStorage.swift in Sources */,
 				E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */,
 				E0888FAE278DE882009B5998 /* Localizable.swift in Sources */,
 				E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */,
+				E09866D0278E6FBB00383645 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
