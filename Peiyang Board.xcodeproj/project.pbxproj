@@ -11,6 +11,8 @@
 		E0515CA3278B44CD00A8BB6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA2278B44CD00A8BB6F /* Assets.xcassets */; };
 		E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */; };
 		E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */; };
+		E079D44F2790577100074B8A /* Done.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D44E2790577100074B8A /* Done.swift */; };
+		E079D4542790585D00074B8A /* Home_components.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D4532790585D00074B8A /* Home_components.swift */; };
 		E0888FAE278DE882009B5998 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FAC278DE882009B5998 /* Localizable.swift */; };
 		E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FAD278DE882009B5998 /* LocalizedKey_Extension.swift */; };
 		E0888FB2278DE92A009B5998 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FB1278DE92A009B5998 /* Network.swift */; };
@@ -33,6 +35,8 @@
 		E0515CA2278B44CD00A8BB6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_Page.swift; sourceTree = "<group>"; };
+		E079D44E2790577100074B8A /* Done.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Done.swift; sourceTree = "<group>"; };
+		E079D4532790585D00074B8A /* Home_components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_components.swift; sourceTree = "<group>"; };
 		E0888FAC278DE882009B5998 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Localizable.swift; path = Localize/Localizable.swift; sourceTree = "<group>"; };
 		E0888FAD278DE882009B5998 /* LocalizedKey_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizedKey_Extension.swift; path = Localize/LocalizedKey_Extension.swift; sourceTree = "<group>"; };
 		E0888FB1278DE92A009B5998 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				E09866CF278E6FBB00383645 /* SwiftUIView.swift */,
+				E0D6D3DB278DB3110040D1C8 /* SplashView.swift */,
 				E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */,
 				E0D6D3DD278DB6200040D1C8 /* View.xib */,
 				E0515C9D278B44CC00A8BB6F /* Peiyang Board */,
@@ -101,9 +106,10 @@
 		E0515CAC278B487E00A8BB6F /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				E0D6D3D6278DB1B60040D1C8 /* SplashView */,
-				E070ED7B278DDCF200478953 /* Weather */,
 				E0C698BB278BE481004E40BE /* Home */,
+				E070ED7B278DDCF200478953 /* Weather */,
+				E09866D2278E8C6D00383645 /* Information */,
+				E09866D1278E8C0F00383645 /* UserProfile */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -115,6 +121,14 @@
 				E0DF9C4B278DE1C500B22E18 /* WeatherManager.swift */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		E079D4502790578300074B8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E079D4532790585D00074B8A /* Home_components.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E0888FA6278DE702009B5998 /* Network */ = {
@@ -152,6 +166,22 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		E09866D1278E8C0F00383645 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E0A10B9F278DE9AC00EC1D08 /* Users.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		E09866D2278E8C6D00383645 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				E0A10B9D278DE9A700EC1D08 /* Information.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
 		E0C698B9278BE3A9004E40BE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,19 +196,11 @@
 		E0C698BB278BE481004E40BE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E079D4502790578300074B8A /* View */,
 				E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */,
-				E0A10B9D278DE9A700EC1D08 /* Information.swift */,
-				E0A10B9F278DE9AC00EC1D08 /* Users.swift */,
+				E079D44E2790577100074B8A /* Done.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		E0D6D3D6278DB1B60040D1C8 /* SplashView */ = {
-			isa = PBXGroup;
-			children = (
-				E0D6D3DB278DB3110040D1C8 /* SplashView.swift */,
-			);
-			path = SplashView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,7 @@
 				E0A10BA0278DE9AC00EC1D08 /* Users.swift in Sources */,
 				E09866CA278E057A00383645 /* Storage.swift in Sources */,
 				E09866CC278E057A00383645 /* SharedMessage.swift in Sources */,
+				E079D44F2790577100074B8A /* Done.swift in Sources */,
 				E0515C9F278B44CC00A8BB6F /* Peiyang_BoardApp.swift in Sources */,
 				E0A10BA8278DEAD900EC1D08 /* Current_Time.swift in Sources */,
 				E0DF9C4C278DE1C500B22E18 /* WeatherManager.swift in Sources */,
@@ -266,6 +289,7 @@
 				E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */,
 				E0888FAE278DE882009B5998 /* Localizable.swift in Sources */,
 				E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */,
+				E079D4542790585D00074B8A /* Home_components.swift in Sources */,
 				E09866D0278E6FBB00383645 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
