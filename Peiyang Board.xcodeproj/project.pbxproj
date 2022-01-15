@@ -13,7 +13,8 @@
 		E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */; };
 		E079D45627919AD100074B8A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D45527919AD100074B8A /* BaseView.swift */; };
 		E079D4612792477100074B8A /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D4602792477100074B8A /* LoginTextField.swift */; };
-		E079D4652792C23C00074B8A /* RTWSShangYaDemo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E079D4642792C23B00074B8A /* RTWSShangYaDemo-Regular.otf */; };
+		E079D46D2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E079D46C2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf */; };
+		E079D46F2792F70300074B8A /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D46E2792F70300074B8A /* Test.swift */; };
 		E0888FAE278DE882009B5998 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FAC278DE882009B5998 /* Localizable.swift */; };
 		E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FAD278DE882009B5998 /* LocalizedKey_Extension.swift */; };
 		E0888FB2278DE92A009B5998 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FB1278DE92A009B5998 /* Network.swift */; };
@@ -39,7 +40,9 @@
 		E079D45527919AD100074B8A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		E079D45D2792466900074B8A /* Peiyang Board.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Peiyang Board.xctestplan"; sourceTree = "<group>"; };
 		E079D4602792477100074B8A /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
-		E079D4642792C23B00074B8A /* RTWSShangYaDemo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RTWSShangYaDemo-Regular.otf"; sourceTree = "<group>"; };
+		E079D4662792CF9700074B8A /* Peiyang-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Peiyang-Board-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E079D46C2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RTWSShangYaDemo-Regular.ttf"; sourceTree = "<group>"; };
+		E079D46E2792F70300074B8A /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		E0888FAC278DE882009B5998 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Localizable.swift; path = Localize/Localizable.swift; sourceTree = "<group>"; };
 		E0888FAD278DE882009B5998 /* LocalizedKey_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizedKey_Extension.swift; path = Localize/LocalizedKey_Extension.swift; sourceTree = "<group>"; };
 		E0888FB1278DE92A009B5998 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 		E0515C9D278B44CC00A8BB6F /* Peiyang Board */ = {
 			isa = PBXGroup;
 			children = (
+				E079D4662792CF9700074B8A /* Peiyang-Board-Info.plist */,
 				E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */,
 				E0D6D3DB278DB3110040D1C8 /* SplashView.swift */,
 				E079D4632792C1FC00074B8A /* Font */,
@@ -182,6 +186,7 @@
 				E079D45D2792466900074B8A /* Peiyang Board.xctestplan */,
 				E0D6D3DD278DB6200040D1C8 /* View.xib */,
 				E09866CF278E6FBB00383645 /* SwiftUIView.swift */,
+				E079D46E2792F70300074B8A /* Test.swift */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -189,7 +194,7 @@
 		E079D4632792C1FC00074B8A /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				E079D4642792C23B00074B8A /* RTWSShangYaDemo-Regular.otf */,
+				E079D46C2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -325,7 +330,7 @@
 				E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */,
 				E0D6D3DE278DB6200040D1C8 /* View.xib in Resources */,
 				E0515CA3278B44CD00A8BB6F /* Assets.xcassets in Resources */,
-				E079D4652792C23C00074B8A /* RTWSShangYaDemo-Regular.otf in Resources */,
+				E079D46D2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +352,7 @@
 				E0515C9F278B44CC00A8BB6F /* Peiyang_BoardApp.swift in Sources */,
 				E0A10BA8278DEAD900EC1D08 /* Current_Time.swift in Sources */,
 				E0DF9C4C278DE1C500B22E18 /* WeatherManager.swift in Sources */,
+				E079D46F2792F70300074B8A /* Test.swift in Sources */,
 				E09866CB278E057A00383645 /* DataStorage.swift in Sources */,
 				E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */,
 				E0888FAE278DE882009B5998 /* Localizable.swift in Sources */,
@@ -486,6 +492,7 @@
 				DEVELOPMENT_TEAM = 88A7L6Y39G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Peiyang-Board-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "北洋看板";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -516,6 +523,7 @@
 				DEVELOPMENT_TEAM = 88A7L6Y39G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Peiyang-Board-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "北洋看板";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

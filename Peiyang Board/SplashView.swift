@@ -44,8 +44,8 @@ struct SplashView: View {
             .ignoresSafeArea()
             .onAppear(perform: end_splashing)
         } else if !login_Storage.isneedLogin {
-            LoginTextField()
-            //BaseView() //进入主页面
+            //LoginTextField()
+            BaseView() //进入主页面
         } else{
             LoginTextField()
                 .onAppear(){
