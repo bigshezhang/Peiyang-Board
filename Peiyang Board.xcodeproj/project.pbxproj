@@ -11,8 +11,9 @@
 		E0515CA3278B44CD00A8BB6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA2278B44CD00A8BB6F /* Assets.xcassets */; };
 		E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */; };
 		E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */; };
-		E079D44F2790577100074B8A /* Done.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D44E2790577100074B8A /* Done.swift */; };
-		E079D4542790585D00074B8A /* Home_components.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D4532790585D00074B8A /* Home_components.swift */; };
+		E079D45627919AD100074B8A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D45527919AD100074B8A /* BaseView.swift */; };
+		E079D4612792477100074B8A /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D4602792477100074B8A /* LoginTextField.swift */; };
+		E079D4652792C23C00074B8A /* RTWSShangYaDemo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E079D4642792C23B00074B8A /* RTWSShangYaDemo-Regular.otf */; };
 		E0888FAE278DE882009B5998 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FAC278DE882009B5998 /* Localizable.swift */; };
 		E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FAD278DE882009B5998 /* LocalizedKey_Extension.swift */; };
 		E0888FB2278DE92A009B5998 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0888FB1278DE92A009B5998 /* Network.swift */; };
@@ -35,8 +36,10 @@
 		E0515CA2278B44CD00A8BB6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_Page.swift; sourceTree = "<group>"; };
-		E079D44E2790577100074B8A /* Done.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Done.swift; sourceTree = "<group>"; };
-		E079D4532790585D00074B8A /* Home_components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_components.swift; sourceTree = "<group>"; };
+		E079D45527919AD100074B8A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		E079D45D2792466900074B8A /* Peiyang Board.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Peiyang Board.xctestplan"; sourceTree = "<group>"; };
+		E079D4602792477100074B8A /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		E079D4642792C23B00074B8A /* RTWSShangYaDemo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RTWSShangYaDemo-Regular.otf"; sourceTree = "<group>"; };
 		E0888FAC278DE882009B5998 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Localizable.swift; path = Localize/Localizable.swift; sourceTree = "<group>"; };
 		E0888FAD278DE882009B5998 /* LocalizedKey_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizedKey_Extension.swift; path = Localize/LocalizedKey_Extension.swift; sourceTree = "<group>"; };
 		E0888FB1278DE92A009B5998 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -67,10 +70,6 @@
 		E0515C92278B44CC00A8BB6F = {
 			isa = PBXGroup;
 			children = (
-				E09866CF278E6FBB00383645 /* SwiftUIView.swift */,
-				E0D6D3DB278DB3110040D1C8 /* SplashView.swift */,
-				E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */,
-				E0D6D3DD278DB6200040D1C8 /* View.xib */,
 				E0515C9D278B44CC00A8BB6F /* Peiyang Board */,
 				E0515C9C278B44CC00A8BB6F /* Products */,
 			);
@@ -87,6 +86,10 @@
 		E0515C9D278B44CC00A8BB6F /* Peiyang Board */ = {
 			isa = PBXGroup;
 			children = (
+				E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */,
+				E0D6D3DB278DB3110040D1C8 /* SplashView.swift */,
+				E079D4632792C1FC00074B8A /* Font */,
+				E079D4622792C1D500074B8A /* Playground */,
 				E0C698B9278BE3A9004E40BE /* Tools */,
 				E0515CAC278B487E00A8BB6F /* Module */,
 				E0515CA2278B44CD00A8BB6F /* Assets.xcassets */,
@@ -106,6 +109,8 @@
 		E0515CAC278B487E00A8BB6F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				E079D4582791BC6D00074B8A /* Login */,
+				E079D45727919C5900074B8A /* Register */,
 				E0C698BB278BE481004E40BE /* Home */,
 				E070ED7B278DDCF200478953 /* Weather */,
 				E09866D2278E8C6D00383645 /* Information */,
@@ -126,9 +131,67 @@
 		E079D4502790578300074B8A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E079D4532790585D00074B8A /* Home_components.swift */,
+				E079D45527919AD100074B8A /* BaseView.swift */,
+				E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E079D45727919C5900074B8A /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		E079D4582791BC6D00074B8A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E079D45B2791BCD400074B8A /* Controller */,
+				E079D4592791BCC300074B8A /* Model */,
+				E079D45A2791BCCA00074B8A /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E079D4592791BCC300074B8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E079D45A2791BCCA00074B8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E079D4602792477100074B8A /* LoginTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E079D45B2791BCD400074B8A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E079D4622792C1D500074B8A /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				E079D45D2792466900074B8A /* Peiyang Board.xctestplan */,
+				E0D6D3DD278DB6200040D1C8 /* View.xib */,
+				E09866CF278E6FBB00383645 /* SwiftUIView.swift */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		E079D4632792C1FC00074B8A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E079D4642792C23B00074B8A /* RTWSShangYaDemo-Regular.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		E0888FA6278DE702009B5998 /* Network */ = {
@@ -197,8 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				E079D4502790578300074B8A /* View */,
-				E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */,
-				E079D44E2790577100074B8A /* Done.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -264,6 +325,7 @@
 				E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */,
 				E0D6D3DE278DB6200040D1C8 /* View.xib in Resources */,
 				E0515CA3278B44CD00A8BB6F /* Assets.xcassets in Resources */,
+				E079D4652792C23C00074B8A /* RTWSShangYaDemo-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +342,8 @@
 				E0A10B9E278DE9A700EC1D08 /* Information.swift in Sources */,
 				E0A10BA0278DE9AC00EC1D08 /* Users.swift in Sources */,
 				E09866CA278E057A00383645 /* Storage.swift in Sources */,
+				E079D4612792477100074B8A /* LoginTextField.swift in Sources */,
 				E09866CC278E057A00383645 /* SharedMessage.swift in Sources */,
-				E079D44F2790577100074B8A /* Done.swift in Sources */,
 				E0515C9F278B44CC00A8BB6F /* Peiyang_BoardApp.swift in Sources */,
 				E0A10BA8278DEAD900EC1D08 /* Current_Time.swift in Sources */,
 				E0DF9C4C278DE1C500B22E18 /* WeatherManager.swift in Sources */,
@@ -289,7 +351,7 @@
 				E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */,
 				E0888FAE278DE882009B5998 /* Localizable.swift in Sources */,
 				E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */,
-				E079D4542790585D00074B8A /* Home_components.swift in Sources */,
+				E079D45627919AD100074B8A /* BaseView.swift in Sources */,
 				E09866D0278E6FBB00383645 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

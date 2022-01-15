@@ -28,9 +28,6 @@ struct SplashView: View {
                     Image("北洋看板")
                         .scaleEffect(0.93)
                         .padding(3)
-                        .onTapGesture {
-                            isloading = true
-                        }
                     Image("Peiyang Bulletin Board")
                         .scaleEffect(0.92)
                 }
@@ -46,8 +43,14 @@ struct SplashView: View {
             }
             .ignoresSafeArea()
             .onAppear(perform: end_splashing)
-        } else {
-            Main_Page() //进入主页面
+        } else if !login_Storage.isneedLogin {
+            LoginTextField()
+            //BaseView() //进入主页面
+        } else{
+            LoginTextField()
+                .onAppear(){
+                    login_Storage.isneedLogin.toggle()
+                }
         }
     }
     func end_splashing() {
