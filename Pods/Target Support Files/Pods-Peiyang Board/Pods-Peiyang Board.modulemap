@@ -1,6 +1,0 @@
-framework module Pods_Peiyang_Board {
-  umbrella header "Pods-Peiyang Board-umbrella.h"
-
-  export *
-  module * { export * }
-}
