@@ -8,27 +8,22 @@
 import SwiftUI
 
 struct LoginTextField: View {
-    @State var username = ""
-    @State var password = ""
-    @State var show_pw = false
+    @Binding var username: String
+    @Binding var password: String
     var body: some View {
-        VStack(spacing: 30){
-            Spacer()
-            Spacer()
+        
+        VStack(alignment: .center, spacing: 28){
             Image("Login_TopPic")
                 .frame(width: 287, height: 167)
-                .scaleEffect(0.95)
-                .padding(.bottom, 50)
-                .offset(y:-50)
-            Spacer(minLength: 50)
-            FormField(fieldName: "Username", fieldValue: $username, img: "Login_Person", isSecure: false)
-            FormField(fieldName: "Password", fieldValue: $password, img: "Login_Lock", isSecure: true)
-            Spacer()
-            Spacer()
-            Spacer()
-            
+                .padding(.bottom, 30)
+            Group{
+                FormField(fieldName: "Username", fieldValue: $username, img: "Login_Person", isSecure: false)
+
+                FormField(fieldName: "Password", fieldValue: $password, img: "Login_Lock", isSecure: true)
+                    .offset(y:-10)
+            }
         }
-        
+
     }
 }
 
@@ -38,26 +33,46 @@ struct FormField: View{
     @Binding var fieldValue: String
     var img: String
     var isSecure = false
-    
+    @State var isShowingPW = false
     var body: some View {
         if isSecure{
             VStack {
                 HStack {
                     Image(img)
-                    SecureField("", text: $fieldValue)
-                        .placeholder(when: fieldValue.isEmpty) {
-                            Text("Password").foregroundColor(Color("Blue_Login_Text"))}
-                        .foregroundColor(Color("Blue_Login_Text"))
-                        .font(.custom("RTWSShangYaDemo-Regular", size: 32))
-                        .frame(width: 239, alignment: .center)
-                        .padding(.leading)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
+                    if !isShowingPW {
+                        SecureField("", text: $fieldValue)
+                            .placeholder(when: fieldValue.isEmpty) {
+                                Text(fieldName)
+                                    .foregroundColor(Color("Blue_Login_Text"))
+                            }
+                            .foregroundColor(Color("Blue_Login_Text"))
+                            .font(.custom(RTW, size: 32))
+                            .frame(width: 210, alignment: .center)
+                            .padding(.leading)
+                            .autocapitalization(.none)
+                            .disableAutocorrection(true)
+                    } else{
+                        TextField("", text: $fieldValue)
+                            .placeholder(when: fieldValue.isEmpty) {
+                                Text(fieldName).foregroundColor(Color("Blue_Login_Text"))}
+                            .foregroundColor(Color("Blue_Login_Text"))
+                            .font(.custom(RTW, size: 32))
+                            .frame(width: 210, alignment: .center)
+                            .padding(.leading)
+                            .autocapitalization(.none)
+                            .disableAutocorrection(true)
+                        }
+                    
+                    Button(action: {isShowingPW.toggle()}){
+                        Image(isShowingPW ? "Close_Eye" : "Open_Eye")
+                            .frame(width: 20, height: 20)
+                            .offset(x:5)//使用frame防止视图随着图片大小变化而错位
+                    }
                 }
-                
+
                 Path{path in
                     path.move(to: CGPoint(x: 35, y: 0))
-                    path.addLine(to: CGPoint(x: 345, y: 0))
+                    path.addLine(to: CGPoint(x: 350, y: 0))
                 }
                 .strokedPath(StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round))
                 .fill(Color("Blue_Login_TextBorder"))
@@ -71,7 +86,7 @@ struct FormField: View{
                         .placeholder(when: fieldValue.isEmpty) {
                             Text("Username").foregroundColor(Color("Blue_Login_Text"))}
                         .foregroundStyle(Color("Blue_Login_Text"))
-                        .font(.custom("RTWSShangYaDemo-Regular", size: 32))
+                        .font(.custom(RTW, size: 32))
                         .frame(width: 239, alignment: .center)
                         .padding(.leading)
                         .autocapitalization(.none)
@@ -80,7 +95,7 @@ struct FormField: View{
                 
                 Path{path in
                     path.move(to: CGPoint(x: 35, y: 0))
-                    path.addLine(to: CGPoint(x: 345, y: 0))
+                    path.addLine(to: CGPoint(x: 350, y: 0))
                 }
                 .strokedPath(StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round))
                 .fill(Color("Blue_Login_TextBorder"))
@@ -89,12 +104,14 @@ struct FormField: View{
         }
     }
 }
-
-struct LoginTextField_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginTextField()
-    }
-}
+//
+//struct LoginTextField_Previews: PreviewProvider {
+//    @State var username = ""
+//    @State var password = ""
+//    static var previews: some View {
+//        LoginTextField(username: $username , password: $password)
+//    }
+//}
 
 extension View {
     func placeholder<Content: View>(

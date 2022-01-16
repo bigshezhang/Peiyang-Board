@@ -11,6 +11,12 @@
 		E0515CA3278B44CD00A8BB6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA2278B44CD00A8BB6F /* Assets.xcassets */; };
 		E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */; };
 		E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */; };
+		E078BB512793B53E000D3AD0 /* Loginpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB502793B53E000D3AD0 /* Loginpage.swift */; };
+		E078BB532793C07D000D3AD0 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB522793C07D000D3AD0 /* LoginPage.swift */; };
+		E078BB552793C54E000D3AD0 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB542793C54E000D3AD0 /* Font.swift */; };
+		E078BB572793D0A5000D3AD0 /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB562793D0A5000D3AD0 /* RegisterTextField.swift */; };
+		E078BB592793D0BA000D3AD0 /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB582793D0BA000D3AD0 /* RegisterPage.swift */; };
+		E078BB5B2793F7CF000D3AD0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB5A2793F7CF000D3AD0 /* LoginController.swift */; };
 		E079D45627919AD100074B8A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D45527919AD100074B8A /* BaseView.swift */; };
 		E079D4612792477100074B8A /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D4602792477100074B8A /* LoginTextField.swift */; };
 		E079D46D2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E079D46C2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf */; };
@@ -37,6 +43,12 @@
 		E0515CA2278B44CD00A8BB6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_Page.swift; sourceTree = "<group>"; };
+		E078BB502793B53E000D3AD0 /* Loginpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loginpage.swift; sourceTree = "<group>"; };
+		E078BB522793C07D000D3AD0 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		E078BB542793C54E000D3AD0 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		E078BB562793D0A5000D3AD0 /* RegisterTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
+		E078BB582793D0BA000D3AD0 /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
+		E078BB5A2793F7CF000D3AD0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E079D45527919AD100074B8A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		E079D45D2792466900074B8A /* Peiyang Board.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Peiyang Board.xctestplan"; sourceTree = "<group>"; };
 		E079D4602792477100074B8A /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
@@ -144,6 +156,8 @@
 		E079D45727919C5900074B8A /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				E078BB562793D0A5000D3AD0 /* RegisterTextField.swift */,
+				E078BB582793D0BA000D3AD0 /* RegisterPage.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -169,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				E079D4602792477100074B8A /* LoginTextField.swift */,
+				E078BB522793C07D000D3AD0 /* LoginPage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,6 +191,7 @@
 		E079D45B2791BCD400074B8A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E078BB5A2793F7CF000D3AD0 /* LoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +199,7 @@
 		E079D4622792C1D500074B8A /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				E078BB502793B53E000D3AD0 /* Loginpage.swift */,
 				E079D45D2792466900074B8A /* Peiyang Board.xctestplan */,
 				E0D6D3DD278DB6200040D1C8 /* View.xib */,
 				E09866CF278E6FBB00383645 /* SwiftUIView.swift */,
@@ -195,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				E079D46C2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf */,
+				E078BB542793C54E000D3AD0 /* Font.swift */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -343,20 +361,26 @@
 			files = (
 				E0D6D3DC278DB3110040D1C8 /* SplashView.swift in Sources */,
 				E0888FB2278DE92A009B5998 /* Network.swift in Sources */,
+				E078BB552793C54E000D3AD0 /* Font.swift in Sources */,
 				E0DF9C4A278DE16F00B22E18 /* Weather.swift in Sources */,
 				E0A10B9E278DE9A700EC1D08 /* Information.swift in Sources */,
 				E0A10BA0278DE9AC00EC1D08 /* Users.swift in Sources */,
 				E09866CA278E057A00383645 /* Storage.swift in Sources */,
 				E079D4612792477100074B8A /* LoginTextField.swift in Sources */,
 				E09866CC278E057A00383645 /* SharedMessage.swift in Sources */,
+				E078BB532793C07D000D3AD0 /* LoginPage.swift in Sources */,
+				E078BB512793B53E000D3AD0 /* Loginpage.swift in Sources */,
 				E0515C9F278B44CC00A8BB6F /* Peiyang_BoardApp.swift in Sources */,
 				E0A10BA8278DEAD900EC1D08 /* Current_Time.swift in Sources */,
+				E078BB592793D0BA000D3AD0 /* RegisterPage.swift in Sources */,
 				E0DF9C4C278DE1C500B22E18 /* WeatherManager.swift in Sources */,
+				E078BB572793D0A5000D3AD0 /* RegisterTextField.swift in Sources */,
 				E079D46F2792F70300074B8A /* Test.swift in Sources */,
 				E09866CB278E057A00383645 /* DataStorage.swift in Sources */,
 				E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */,
 				E0888FAE278DE882009B5998 /* Localizable.swift in Sources */,
 				E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */,
+				E078BB5B2793F7CF000D3AD0 /* LoginController.swift in Sources */,
 				E079D45627919AD100074B8A /* BaseView.swift in Sources */,
 				E09866D0278E6FBB00383645 /* SwiftUIView.swift in Sources */,
 			);

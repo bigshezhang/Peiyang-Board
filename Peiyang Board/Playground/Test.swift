@@ -18,6 +18,14 @@ struct Test: View {
                         .frame(width: 100, height: 100)
                         .foregroundStyle(Color.secondary)
                         .offset(y: -245))
+            
+            NavigationView {
+                NavigationLink{
+                    LoginPage()
+                }label: {
+                    Text("233")
+            }
+            }
                         
         }
     }

@@ -9,8 +9,10 @@ import SwiftUI
 
 @main
 struct Peiyang_BoardApp: App {
+    @EnvironmentObject var login_Storage : Login_storage
     var body: some Scene {
         WindowGroup {
+            
             SplashView()
         }
     }

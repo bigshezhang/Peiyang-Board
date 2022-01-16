@@ -44,12 +44,13 @@ struct SplashView: View {
             .ignoresSafeArea()
             .onAppear(perform: end_splashing)
         } else if !login_Storage.isneedLogin {
-            //LoginTextField()
-            BaseView() //进入主页面
+//            TestLoginPage()
+            LoginPage()
+//            BaseView() //进入主页面
         } else{
-            LoginTextField()
+            LoginPage()
                 .onAppear(){
-                    login_Storage.isneedLogin.toggle()
+                    login_Storage.isneedLogin.toggle() //日后修改
                 }
         }
     }
@@ -57,7 +58,7 @@ struct SplashView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             // 结束splash
             withAnimation(.easeInOut(duration: 2)){
-                isSplashing = false
+               isSplashing = false
             }
         }
     }
