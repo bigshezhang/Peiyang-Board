@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E005EBDF2794F6940087AC0D /* NewLoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005EBDE2794F6940087AC0D /* NewLoginPage.swift */; };
+		E005EBE42794FAAD0087AC0D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E005EBE32794FAAD0087AC0D /* MainStoryboard.storyboard */; };
+		E005EBE6279503EE0087AC0D /* NewLoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005EBE5279503EE0087AC0D /* NewLoginTextField.swift */; };
 		E0515C9F278B44CC00A8BB6F /* Peiyang_BoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */; };
 		E0515CA3278B44CD00A8BB6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA2278B44CD00A8BB6F /* Assets.xcassets */; };
 		E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */; };
@@ -14,6 +17,8 @@
 		E0760AF5279468E3002281D1 /* MainPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0760AF4279468E3002281D1 /* MainPageHeader.swift */; };
 		E0760AF927947BA6002281D1 /* FZMSTJW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0760AF827947BA6002281D1 /* FZMSTJW.ttf */; };
 		E0760AFE27948483002281D1 /* NumberToChinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0760AFD27948483002281D1 /* NumberToChinese.swift */; };
+		E0760B002794F3BC002281D1 /* Peiyang-Board-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0760AFF2794F3BC002281D1 /* Peiyang-Board-Info.plist */; };
+		E0760B032794F485002281D1 /* NewMainPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0760B022794F485002281D1 /* NewMainPageHeader.swift */; };
 		E078BB512793B53E000D3AD0 /* Loginpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB502793B53E000D3AD0 /* Loginpage.swift */; };
 		E078BB532793C07D000D3AD0 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB522793C07D000D3AD0 /* LoginPage.swift */; };
 		E078BB552793C54E000D3AD0 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB542793C54E000D3AD0 /* Font.swift */; };
@@ -40,6 +45,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E005EBDE2794F6940087AC0D /* NewLoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoginPage.swift; sourceTree = "<group>"; };
+		E005EBE32794FAAD0087AC0D /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E005EBE5279503EE0087AC0D /* NewLoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoginTextField.swift; sourceTree = "<group>"; };
 		E0515C9B278B44CC00A8BB6F /* Peiyang Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peiyang Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peiyang_BoardApp.swift; sourceTree = "<group>"; };
 		E0515CA2278B44CD00A8BB6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +56,8 @@
 		E0760AF4279468E3002281D1 /* MainPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageHeader.swift; sourceTree = "<group>"; };
 		E0760AF827947BA6002281D1 /* FZMSTJW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZMSTJW.ttf; sourceTree = "<group>"; };
 		E0760AFD27948483002281D1 /* NumberToChinese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToChinese.swift; sourceTree = "<group>"; };
+		E0760AFF2794F3BC002281D1 /* Peiyang-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Peiyang-Board-Info.plist"; sourceTree = "<group>"; };
+		E0760B022794F485002281D1 /* NewMainPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMainPageHeader.swift; sourceTree = "<group>"; };
 		E078BB502793B53E000D3AD0 /* Loginpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loginpage.swift; sourceTree = "<group>"; };
 		E078BB522793C07D000D3AD0 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		E078BB542793C54E000D3AD0 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -56,7 +66,6 @@
 		E079D45527919AD100074B8A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		E079D45D2792466900074B8A /* Peiyang Board.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Peiyang Board.xctestplan"; sourceTree = "<group>"; };
 		E079D4602792477100074B8A /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
-		E079D4662792CF9700074B8A /* Peiyang-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Peiyang-Board-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E079D46C2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RTWSShangYaDemo-Regular.ttf"; sourceTree = "<group>"; };
 		E079D46E2792F70300074B8A /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		E0888FAC278DE882009B5998 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Localizable.swift; path = Localize/Localizable.swift; sourceTree = "<group>"; };
@@ -86,9 +95,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E005EBE02794F6990087AC0D /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				E005EBDE2794F6940087AC0D /* NewLoginPage.swift */,
+				E005EBE5279503EE0087AC0D /* NewLoginTextField.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		E0515C92278B44CC00A8BB6F = {
 			isa = PBXGroup;
 			children = (
+				E0760AFF2794F3BC002281D1 /* Peiyang-Board-Info.plist */,
 				E0515C9D278B44CC00A8BB6F /* Peiyang Board */,
 				E0515C9C278B44CC00A8BB6F /* Products */,
 			);
@@ -105,7 +124,7 @@
 		E0515C9D278B44CC00A8BB6F /* Peiyang Board */ = {
 			isa = PBXGroup;
 			children = (
-				E079D4662792CF9700074B8A /* Peiyang-Board-Info.plist */,
+				E005EBE32794FAAD0087AC0D /* MainStoryboard.storyboard */,
 				E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */,
 				E0D6D3DB278DB3110040D1C8 /* SplashView.swift */,
 				E079D4632792C1FC00074B8A /* Font */,
@@ -188,6 +207,14 @@
 			path = Formatter;
 			sourceTree = "<group>";
 		};
+		E0760B012794F475002281D1 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				E0760B022794F485002281D1 /* NewMainPageHeader.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		E079D4502790578300074B8A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +235,7 @@
 		E079D4582791BC6D00074B8A /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				E005EBE02794F6990087AC0D /* Test */,
 				E079D4592791BCC300074B8A /* Model */,
 				E079D45A2791BCCA00074B8A /* View */,
 				E079D45B2791BCD400074B8A /* Controller */,
@@ -326,6 +354,7 @@
 		E0C698BB278BE481004E40BE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E0760B012794F475002281D1 /* Test */,
 				E0760AF32794684B002281D1 /* Controller */,
 				E0760AF227946842002281D1 /* Model */,
 				E079D4502790578300074B8A /* View */,
@@ -391,10 +420,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0760B002794F3BC002281D1 /* Peiyang-Board-Info.plist in Resources */,
 				E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */,
 				E0760AF927947BA6002281D1 /* FZMSTJW.ttf in Resources */,
 				E0D6D3DE278DB6200040D1C8 /* View.xib in Resources */,
 				E0515CA3278B44CD00A8BB6F /* Assets.xcassets in Resources */,
+				E005EBE42794FAAD0087AC0D /* MainStoryboard.storyboard in Resources */,
 				E079D46D2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,8 +452,10 @@
 				E0A10BA8278DEAD900EC1D08 /* Current_Time.swift in Sources */,
 				E078BB592793D0BA000D3AD0 /* RegisterPage.swift in Sources */,
 				E0DF9C4C278DE1C500B22E18 /* WeatherManager.swift in Sources */,
+				E0760B032794F485002281D1 /* NewMainPageHeader.swift in Sources */,
 				E078BB572793D0A5000D3AD0 /* RegisterTextField.swift in Sources */,
 				E079D46F2792F70300074B8A /* Test.swift in Sources */,
+				E005EBE6279503EE0087AC0D /* NewLoginTextField.swift in Sources */,
 				E09866CB278E057A00383645 /* DataStorage.swift in Sources */,
 				E0760AF5279468E3002281D1 /* MainPageHeader.swift in Sources */,
 				E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */,
@@ -431,6 +464,7 @@
 				E0515CB1278B4A0D00A8BB6F /* MainPage.swift in Sources */,
 				E079D45627919AD100074B8A /* BaseView.swift in Sources */,
 				E09866D0278E6FBB00383645 /* SwiftUIView.swift in Sources */,
+				E005EBDF2794F6940087AC0D /* NewLoginPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -83,7 +83,7 @@ struct LoginPage: View {
     func get_Login(){
         login_Storage.username = self.username
         login_Storage.password = self.password
-        var result = true
+        let result = true
         if result{
             withAnimation(.easeInOut(duration: 0.5)){
                 login_Success = true
