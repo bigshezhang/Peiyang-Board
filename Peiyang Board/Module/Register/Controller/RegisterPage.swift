@@ -34,7 +34,7 @@ struct RegisterPage: View {
                         }
                 }
                 Spacer()
-                RegisterTextField(username: $login_Storage.username, password: $login_Storage.password, confirm_password: $confirm_password)
+                RegisterTextField(username: $username, password: $password, confirm_password: $confirm_password)
                     .offset(y: -30)
                 HStack {
                     Spacer()
@@ -61,7 +61,7 @@ struct RegisterPage: View {
             LoginPage()
                 .environmentObject(Login_storage())
         }   else if (!turnToLogin && register_Success){
-            Main_Page()
+            BaseView()
         }
     }
     
@@ -78,6 +78,7 @@ struct RegisterPage: View {
         if result{
             withAnimation(.easeInOut(duration: 0.5)){
                 register_Success = true
+                login_Storage.isneedLogin.toggle()
             }
         }
         print(login_Storage.username)

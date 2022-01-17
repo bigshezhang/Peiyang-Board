@@ -13,7 +13,6 @@ struct SplashView: View {
 
     @State private var isloading = false
     @State private var isSplashing: Bool = true
-    
     var body: some View {
         
         if(isSplashing) {
@@ -44,14 +43,13 @@ struct SplashView: View {
             .ignoresSafeArea()
             .onAppear(perform: end_splashing)
         } else if !login_Storage.isneedLogin {
-//            TestLoginPage()
-            LoginPage()
-//            BaseView() //进入主页面
+//            LoginPage()
+            BaseView() //进入主页面
+                .onAppear(){
+                    print(login_Storage.isneedLogin)
+                }
         } else{
             LoginPage()
-                .onAppear(){
-                    login_Storage.isneedLogin.toggle() //日后修改
-                }
         }
     }
     func end_splashing() {

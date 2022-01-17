@@ -16,9 +16,7 @@ struct BaseView: View {
 @ViewBuilder
 func Footer_View() -> some View{
     TabView {
-        Main_Page()
-             .symbolRenderingMode(.hierarchical)
-             .foregroundColor(.blue)
+        MainPage()
          .tabItem {
             Image(systemName: "checkmark.circle")
                  .symbolRenderingMode(.hierarchical)

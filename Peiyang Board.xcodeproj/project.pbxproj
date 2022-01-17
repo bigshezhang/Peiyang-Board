@@ -10,13 +10,15 @@
 		E0515C9F278B44CC00A8BB6F /* Peiyang_BoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */; };
 		E0515CA3278B44CD00A8BB6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA2278B44CD00A8BB6F /* Assets.xcassets */; };
 		E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */; };
-		E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */; };
+		E0515CB1278B4A0D00A8BB6F /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0515CB0278B4A0D00A8BB6F /* MainPage.swift */; };
+		E0760AF5279468E3002281D1 /* MainPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0760AF4279468E3002281D1 /* MainPageHeader.swift */; };
+		E0760AF927947BA6002281D1 /* FZMSTJW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0760AF827947BA6002281D1 /* FZMSTJW.ttf */; };
+		E0760AFE27948483002281D1 /* NumberToChinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0760AFD27948483002281D1 /* NumberToChinese.swift */; };
 		E078BB512793B53E000D3AD0 /* Loginpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB502793B53E000D3AD0 /* Loginpage.swift */; };
 		E078BB532793C07D000D3AD0 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB522793C07D000D3AD0 /* LoginPage.swift */; };
 		E078BB552793C54E000D3AD0 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB542793C54E000D3AD0 /* Font.swift */; };
 		E078BB572793D0A5000D3AD0 /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB562793D0A5000D3AD0 /* RegisterTextField.swift */; };
 		E078BB592793D0BA000D3AD0 /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB582793D0BA000D3AD0 /* RegisterPage.swift */; };
-		E078BB5B2793F7CF000D3AD0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB5A2793F7CF000D3AD0 /* LoginController.swift */; };
 		E079D45627919AD100074B8A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D45527919AD100074B8A /* BaseView.swift */; };
 		E079D4612792477100074B8A /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E079D4602792477100074B8A /* LoginTextField.swift */; };
 		E079D46D2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E079D46C2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf */; };
@@ -42,13 +44,15 @@
 		E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peiyang_BoardApp.swift; sourceTree = "<group>"; };
 		E0515CA2278B44CD00A8BB6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0515CA5278B44CD00A8BB6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_Page.swift; sourceTree = "<group>"; };
+		E0515CB0278B4A0D00A8BB6F /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		E0760AF4279468E3002281D1 /* MainPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageHeader.swift; sourceTree = "<group>"; };
+		E0760AF827947BA6002281D1 /* FZMSTJW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZMSTJW.ttf; sourceTree = "<group>"; };
+		E0760AFD27948483002281D1 /* NumberToChinese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToChinese.swift; sourceTree = "<group>"; };
 		E078BB502793B53E000D3AD0 /* Loginpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loginpage.swift; sourceTree = "<group>"; };
 		E078BB522793C07D000D3AD0 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		E078BB542793C54E000D3AD0 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		E078BB562793D0A5000D3AD0 /* RegisterTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
 		E078BB582793D0BA000D3AD0 /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
-		E078BB5A2793F7CF000D3AD0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E079D45527919AD100074B8A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		E079D45D2792466900074B8A /* Peiyang Board.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Peiyang Board.xctestplan"; sourceTree = "<group>"; };
 		E079D4602792477100074B8A /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
@@ -144,11 +148,50 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
-		E079D4502790578300074B8A /* View */ = {
+		E0760AF227946842002281D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0760AF32794684B002281D1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				E079D45527919AD100074B8A /* BaseView.swift */,
-				E0515CB0278B4A0D00A8BB6F /* Main_Page.swift */,
+				E0515CB0278B4A0D00A8BB6F /* MainPage.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E0760AF627947997002281D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E078BB582793D0BA000D3AD0 /* RegisterPage.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E0760AF7279479A3002281D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E078BB562793D0A5000D3AD0 /* RegisterTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0760AFC27948470002281D1 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				E0760AFD27948483002281D1 /* NumberToChinese.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		E079D4502790578300074B8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0760AF4279468E3002281D1 /* MainPageHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,8 +199,8 @@
 		E079D45727919C5900074B8A /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				E078BB562793D0A5000D3AD0 /* RegisterTextField.swift */,
-				E078BB582793D0BA000D3AD0 /* RegisterPage.swift */,
+				E0760AF7279479A3002281D1 /* View */,
+				E0760AF627947997002281D1 /* Controller */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -165,9 +208,9 @@
 		E079D4582791BC6D00074B8A /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				E079D45B2791BCD400074B8A /* Controller */,
 				E079D4592791BCC300074B8A /* Model */,
 				E079D45A2791BCCA00074B8A /* View */,
+				E079D45B2791BCD400074B8A /* Controller */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -183,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				E079D4602792477100074B8A /* LoginTextField.swift */,
-				E078BB522793C07D000D3AD0 /* LoginPage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,7 +233,7 @@
 		E079D45B2791BCD400074B8A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E078BB5A2793F7CF000D3AD0 /* LoginController.swift */,
+				E078BB522793C07D000D3AD0 /* LoginPage.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				E079D46C2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf */,
+				E0760AF827947BA6002281D1 /* FZMSTJW.ttf */,
 				E078BB542793C54E000D3AD0 /* Font.swift */,
 			);
 			path = Font;
@@ -271,6 +314,7 @@
 		E0C698B9278BE3A9004E40BE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				E0760AFC27948470002281D1 /* Formatter */,
 				E09866C0278E052800383645 /* Storage */,
 				E0888FB0278DE8A3009B5998 /* Time */,
 				E0888FA9278DE789009B5998 /* Localize */,
@@ -282,6 +326,8 @@
 		E0C698BB278BE481004E40BE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E0760AF32794684B002281D1 /* Controller */,
+				E0760AF227946842002281D1 /* Model */,
 				E079D4502790578300074B8A /* View */,
 			);
 			path = Home;
@@ -346,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0515CA6278B44CD00A8BB6F /* Preview Assets.xcassets in Resources */,
+				E0760AF927947BA6002281D1 /* FZMSTJW.ttf in Resources */,
 				E0D6D3DE278DB6200040D1C8 /* View.xib in Resources */,
 				E0515CA3278B44CD00A8BB6F /* Assets.xcassets in Resources */,
 				E079D46D2792D44100074B8A /* RTWSShangYaDemo-Regular.ttf in Resources */,
@@ -377,10 +424,11 @@
 				E078BB572793D0A5000D3AD0 /* RegisterTextField.swift in Sources */,
 				E079D46F2792F70300074B8A /* Test.swift in Sources */,
 				E09866CB278E057A00383645 /* DataStorage.swift in Sources */,
+				E0760AF5279468E3002281D1 /* MainPageHeader.swift in Sources */,
 				E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */,
+				E0760AFE27948483002281D1 /* NumberToChinese.swift in Sources */,
 				E0888FAE278DE882009B5998 /* Localizable.swift in Sources */,
-				E0515CB1278B4A0D00A8BB6F /* Main_Page.swift in Sources */,
-				E078BB5B2793F7CF000D3AD0 /* LoginController.swift in Sources */,
+				E0515CB1278B4A0D00A8BB6F /* MainPage.swift in Sources */,
 				E079D45627919AD100074B8A /* BaseView.swift in Sources */,
 				E09866D0278E6FBB00383645 /* SwiftUIView.swift in Sources */,
 			);

@@ -70,7 +70,7 @@ struct LoginPage: View {
                   .environmentObject(Login_storage())
         }
                else if (!turnToRegister && login_Success){
-                    Main_Page()
+                    BaseView()
             }
     }
     func toRegister() {
@@ -87,6 +87,7 @@ struct LoginPage: View {
         if result{
             withAnimation(.easeInOut(duration: 0.5)){
                 login_Success = true
+                login_Storage.isneedLogin.toggle()
             }
         }
         print(login_Storage.username)

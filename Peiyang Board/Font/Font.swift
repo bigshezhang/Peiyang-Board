@@ -7,4 +7,7 @@
 
 import Foundation
 
+var FZMS = "FZMingShangTiS-R-GB"
 var RTW = "RTWSShangYaDemo-Regular"
+
+
