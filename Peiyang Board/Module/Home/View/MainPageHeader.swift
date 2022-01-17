@@ -18,7 +18,7 @@ struct MainPageHeader: View {
                     Image(systemName: "sun.max")
                         .font(.system(size: 40,weight: .light))
                         .foregroundColor(Color("Sun_Weather"))
-                        .offset(x:-26,y:-25)
+                        .offset(x:ByWidth(Scale: -6),y:-25)
                         .frame(width: 40, height: 40)
                 }
                 .offset(x:25,y: 20)
@@ -32,12 +32,10 @@ struct MainPageHeader: View {
                 HStack{
                     Text("总消息数")
                         .foregroundColor(Color("Main_Font"))
-//                        .position(x: 70, y: 0)
                         .offset(x:-48)
                     Text("\(Information.count)")
                         .frame(width: 40)
                         .foregroundColor(Color("Main_Font"))
-//                        .position(x: 55, y: 0)
                         .offset(x: 20)
                 }
                 .offset(x:25,y: -14)

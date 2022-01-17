@@ -24,8 +24,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="北洋看板" translatesAutoresizingMaskIntoConstraints="NO" id="0hc-c9-gzA">
-                                <rect key="frame" x="12" y="383" width="367" height="78"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" misplaced="YES" image="北洋看板" translatesAutoresizingMaskIntoConstraints="NO" id="0hc-c9-gzA">
+                                <rect key="frame" x="12" y="362" width="367" height="78"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0hc-c9-gzA" secondAttribute="height" multiplier="367:78" id="nWH-oN-lJw"/>
                                     <constraint firstAttribute="width" secondItem="0hc-c9-gzA" secondAttribute="height" multiplier="367:78" id="vYS-NL-1Rs"/>
@@ -76,7 +76,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bG6-oi-vCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="-33"/>
+            <point key="canvasLocation" x="655" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8UW-x8-ocM">

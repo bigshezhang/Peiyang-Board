@@ -10,6 +10,7 @@ import Foundation
 struct Current_Time{
     var day = Calendar.current.component(.day, from: Date())
     var month = Calendar.current.component(.month, from: Date())
+    var weekOfYear = Calendar.current.component(.weekOfYear, from: Date())
 }
 
 let time = Current_Time()

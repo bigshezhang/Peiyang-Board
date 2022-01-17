@@ -19,6 +19,8 @@ struct MainPage: View {
                         .offset(y:10)
                 }
                 .frame(width: UIScreen.main.bounds.width)
+                
+                MainWeekIndicator()
             }
         }
         .ignoresSafeArea(.all)

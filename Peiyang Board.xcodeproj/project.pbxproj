@@ -38,6 +38,8 @@
 		E0A10B9E278DE9A700EC1D08 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10B9D278DE9A700EC1D08 /* Information.swift */; };
 		E0A10BA0278DE9AC00EC1D08 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10B9F278DE9AC00EC1D08 /* Users.swift */; };
 		E0A10BA8278DEAD900EC1D08 /* Current_Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10BA7278DEAD900EC1D08 /* Current_Time.swift */; };
+		E0CBF47A279542AA00407207 /* ScreenBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBF479279542AA00407207 /* ScreenBounds.swift */; };
+		E0CBF47C27954EA400407207 /* MainWeekIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBF47B27954EA400407207 /* MainWeekIndicator.swift */; };
 		E0D6D3DC278DB3110040D1C8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6D3DB278DB3110040D1C8 /* SplashView.swift */; };
 		E0D6D3DE278DB6200040D1C8 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0D6D3DD278DB6200040D1C8 /* View.xib */; };
 		E0DF9C4A278DE16F00B22E18 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF9C49278DE16F00B22E18 /* Weather.swift */; };
@@ -78,6 +80,8 @@
 		E0A10B9D278DE9A700EC1D08 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		E0A10B9F278DE9AC00EC1D08 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		E0A10BA7278DEAD900EC1D08 /* Current_Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current_Time.swift; sourceTree = "<group>"; };
+		E0CBF479279542AA00407207 /* ScreenBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBounds.swift; sourceTree = "<group>"; };
+		E0CBF47B27954EA400407207 /* MainWeekIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeekIndicator.swift; sourceTree = "<group>"; };
 		E0D6D3DB278DB3110040D1C8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E0D6D3DD278DB6200040D1C8 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		E0DF9C49278DE16F00B22E18 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				E0760AF4279468E3002281D1 /* MainPageHeader.swift */,
+				E0CBF47B27954EA400407207 /* MainWeekIndicator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 		E0C698B9278BE3A9004E40BE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				E0CBF4782795429800407207 /* ScreenBounds */,
 				E0760AFC27948470002281D1 /* Formatter */,
 				E09866C0278E052800383645 /* Storage */,
 				E0888FB0278DE8A3009B5998 /* Time */,
@@ -360,6 +366,14 @@
 				E079D4502790578300074B8A /* View */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E0CBF4782795429800407207 /* ScreenBounds */ = {
+			isa = PBXGroup;
+			children = (
+				E0CBF479279542AA00407207 /* ScreenBounds.swift */,
+			);
+			path = ScreenBounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +468,7 @@
 				E0DF9C4C278DE1C500B22E18 /* WeatherManager.swift in Sources */,
 				E0760B032794F485002281D1 /* NewMainPageHeader.swift in Sources */,
 				E078BB572793D0A5000D3AD0 /* RegisterTextField.swift in Sources */,
+				E0CBF47A279542AA00407207 /* ScreenBounds.swift in Sources */,
 				E079D46F2792F70300074B8A /* Test.swift in Sources */,
 				E005EBE6279503EE0087AC0D /* NewLoginTextField.swift in Sources */,
 				E09866CB278E057A00383645 /* DataStorage.swift in Sources */,
@@ -464,6 +479,7 @@
 				E0515CB1278B4A0D00A8BB6F /* MainPage.swift in Sources */,
 				E079D45627919AD100074B8A /* BaseView.swift in Sources */,
 				E09866D0278E6FBB00383645 /* SwiftUIView.swift in Sources */,
+				E0CBF47C27954EA400407207 /* MainWeekIndicator.swift in Sources */,
 				E005EBDF2794F6940087AC0D /* NewLoginPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
