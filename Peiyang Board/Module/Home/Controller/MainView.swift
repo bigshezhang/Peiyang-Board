@@ -7,16 +7,19 @@
 
 import SwiftUI
 
-struct BaseView: View {
+struct MainView: View {
     var body: some View {
-        Footer_View()
+        
+        NavigationView {
+            Footer_View()
+        }
     }
 }
 
 @ViewBuilder
 func Footer_View() -> some View{
     TabView {
-        MainPage()
+        HomeView()
          .tabItem {
             Image(systemName: "checkmark.circle")
                  .symbolRenderingMode(.hierarchical)
@@ -32,8 +35,8 @@ func Footer_View() -> some View{
 }
 
 
-struct BaseView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        BaseView()
+        MainView()
     }
 }

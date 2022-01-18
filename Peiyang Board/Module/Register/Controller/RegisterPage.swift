@@ -61,7 +61,7 @@ struct RegisterPage: View {
             LoginPage()
                 .environmentObject(Login_storage())
         }   else if (!turnToLogin && register_Success){
-            BaseView()
+            MainView()
         }
     }
     

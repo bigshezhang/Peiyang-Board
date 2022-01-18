@@ -44,7 +44,8 @@ struct SplashView: View {
             .onAppear(perform: end_splashing)
         } else if !login_Storage.isneedLogin {
 //            LoginPage()
-            BaseView() //进入主页面
+            MainView() //进入主页面
+                .onAppear(perform: InitAll)
                 .onAppear(){
                     print(login_Storage.isneedLogin)
                 }
@@ -52,6 +53,7 @@ struct SplashView: View {
             LoginPage()
         }
     }
+        
     func end_splashing() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             // 结束splash

@@ -23,13 +23,13 @@ import UIKit
 //
 //var ScreenBounds = MyScreenBounds()
 
-var width = UIScreen.main.bounds.width
-var height = UIScreen.main.bounds.height
+var ScreenWidth = UIScreen.main.bounds.width
+var ScreenHeight = UIScreen.main.bounds.height
 
 func ByWidth(Scale: Double) -> Double {
-    return width*Scale/100
+    return ScreenWidth*Scale/100.0
 }
 
 func ByHeight(Scale: Double) -> Double {
-    return height*Scale/100
+    return ScreenHeight*Scale/100.0
 }

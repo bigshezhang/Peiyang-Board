@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+func InitAll(){
+    notis_init()
+}

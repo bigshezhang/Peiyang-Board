@@ -70,7 +70,7 @@ struct LoginPage: View {
                   .environmentObject(Login_storage())
         }
                else if (!turnToRegister && login_Success){
-                    BaseView()
+                    MainView()
             }
     }
     func toRegister() {

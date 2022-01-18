@@ -14,7 +14,7 @@ struct MainPageHeader: View {
                 HStack{
                     Text("\(NumberToChinese(num: time.month))月\(NumberToChinese(num: time.day))日")
                         .font(.custom(FZMS, size: 35))
-                        .foregroundColor(Color("Main_Font"))
+                        .foregroundColor(Color("Main_Header_Font"))
                     Image(systemName: "sun.max")
                         .font(.system(size: 40,weight: .light))
                         .foregroundColor(Color("Sun_Weather"))
@@ -27,15 +27,15 @@ struct MainPageHeader: View {
                     path.addLine(to: CGPoint(x: 215, y: 0))
                 }
                 .strokedPath(StrokeStyle(lineWidth: 1.5, lineCap: .round, lineJoin: .round))
-                .fill(Color("Main_Font"))
+                .fill(Color("Main_Header_Font"))
                 
                 HStack{
                     Text("总消息数")
-                        .foregroundColor(Color("Main_Font"))
+                        .foregroundColor(Color("Main_Header_Font"))
                         .offset(x:-48)
                     Text("\(Information.count)")
                         .frame(width: 40)
-                        .foregroundColor(Color("Main_Font"))
+                        .foregroundColor(Color("Main_Header_Font"))
                         .offset(x: 20)
                 }
                 .offset(x:25,y: -14)
@@ -46,7 +46,7 @@ struct MainPageHeader: View {
                 Text("@")
                     .font(.system(size: 135, weight: .light))
 //                    .font(.system(size: <#CGFloat#>, weight: .bold))
-                    .foregroundColor(Color("Main_Font"))
+                    .foregroundColor(Color("Main_Header_Font"))
 
                 
                 Image("user")

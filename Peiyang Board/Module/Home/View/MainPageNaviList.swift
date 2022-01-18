@@ -5,11 +5,22 @@
 //  Created by 李子鸣 on 2022/1/17.
 //
 
+
+//Discarded
+
+
 import SwiftUI
 
 struct MainPageNaviList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(notis[1..<10]){ noti in
+        NavigationLink{
+            MainPageNaviRow()
+        }
+        label: {
+                    MainPageNaviRow(noti: notis[1])
+            }
+        }
     }
 }
 
