@@ -9,40 +9,37 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        
-//        NavigationView{
-//
+        ZStack{
+            VStack{
+                HStack{
+                    Spacer()
+                    Image("MainPage_Head")
+                        .frame(width: UIScreen.main.bounds.width)
+                        .offset(y:-20)
+                }
+                Spacer()
+            }
             ScrollView(.vertical, showsIndicators: false){
                 VStack{
-                    ZStack {
-                        Image("MainPage_Head")
-                            .frame(width: UIScreen.main.bounds.width)
-                            .offset(y:-20)
-                        MainPageHeader()
-                            .offset(y:10)
-                    }
-                    .frame(width: UIScreen.main.bounds.width)
+                    MainPageHeader()
+                        .padding(.top)
                     
                     MainWeekIndicator()
-                        .padding(.top,ByHeight(Scale: -4))
+                        .padding(.top,ByHeight(Scale: -5))
                         .padding(.bottom,ByHeight(Scale: 0.1))
-//                    MainPageNaviList()
-//                        .frame(width:ScreenWidth, height: ScreenHeight)
-//                    MainPageNaviRow()
 
                     ForEach(notis.indices,id: \.self){ i in
                         MainPageNaviRow(noti: notis[i])
-//                            .lineSpacing(20)
                     }
+
                     Spacer()
                         .padding(.bottom,ByHeight(Scale: 20))
                 }
-                
             }
-            .ignoresSafeArea(.all)
             .navigationBarHidden(true)
-//        }
-        
+            
+        }
+        .ignoresSafeArea(.all)
     }
 }
 

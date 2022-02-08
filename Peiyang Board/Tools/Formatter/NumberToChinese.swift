@@ -4,7 +4,7 @@
 //
 //  Created by 李子鸣 on 2022/1/17.
 //
-
+//  将数字转化为汉字
 import Foundation
 
 func NumberToChinese (num: Int) -> String{

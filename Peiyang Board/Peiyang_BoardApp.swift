@@ -8,16 +8,12 @@
 import SwiftUI
 import Foundation
 
-@main
+@main       //程序入口
 struct Peiyang_BoardApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SplashView()
-                .onAppear(){
-                    
-                }
+            SplashView()    //调用开屏页
         }
     }
-    
 }

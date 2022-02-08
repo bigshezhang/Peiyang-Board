@@ -4,7 +4,7 @@
 //
 //  Created by 李子鸣 on 2022/1/10.
 //
-
+//  获取当前时间
 import Foundation
 
 struct Current_Time{

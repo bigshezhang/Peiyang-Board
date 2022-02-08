@@ -9,69 +9,64 @@ import SwiftUI
 
 struct MainPageHeader: View {
     var body: some View {
-        HStack {
-            VStack{
-                HStack{
-                    Text("\(NumberToChinese(num: time.month))月\(NumberToChinese(num: time.day))日")
-                        .font(.custom(FZMS, size: 35))
-                        .foregroundColor(Color("Main_Header_Font"))
-                    Image(systemName: "sun.max")
-                        .font(.system(size: 40,weight: .light))
-                        .foregroundColor(Color("Sun_Weather"))
-                        .offset(x:ByWidth(Scale: -6),y:-25)
-                        .frame(width: 40, height: 40)
+        ZStack{
+            HStack {
+                VStack{
+                    HStack{
+                        Text("\(NumberToChinese(num: time.month))月\(NumberToChinese(num: time.day))日")
+                            .font(.custom(FZMS, size: ByWidth(Scale: 12)))
+                            .foregroundColor(Color("Main_Header_Font"))
+                        
+                        Image(systemName: "sun.max")    //小太阳用了offset
+                            .font(.system(size: ByWidth(Scale: 10),weight: .light))
+                            .foregroundColor(Color("Sun_Weather"))
+                            .offset(x:ByWidth(Scale: -10), y:ByHeight(Scale: -3))
+                    }
+                    .padding(.leading, ByWidth(Scale: 10))
+                    
+                    
+                    //不知道为什么不能加Path，加上之后前面的文字不能居中
+//                    Path{path in
+//                        path.move(to: CGPoint(x: ByWidth(Scale: 5), y: 0))
+//                        path.addLine(to: CGPoint(x: ByWidth(Scale: 60), y: 0))
+//                    }
+//                    .strokedPath(StrokeStyle(lineWidth: 1.5, lineCap: .round, lineJoin: .round))
+//                    .fill(Color("Main_Header_Font"))
+                    
+                    HStack{
+                        Text("总消息数")
+                            .foregroundColor(Color("Main_Header_Font"))
+                            
+                        Text("\(Information.count)")
+                            .frame(width: 40)
+                            .foregroundColor(Color("Main_Header_Font"))
+                    }
+                    .font(.custom(FZMS, size: 20))
                 }
-                .offset(x:25,y: 20)
-                Path{path in
-                    path.move(to: CGPoint(x: 35, y: 0))
-                    path.addLine(to: CGPoint(x: 215, y: 0))
-                }
-                .strokedPath(StrokeStyle(lineWidth: 1.5, lineCap: .round, lineJoin: .round))
-                .fill(Color("Main_Header_Font"))
+                .frame(height: ByHeight(Scale: 20))
                 
-                HStack{
-                    Text("总消息数")
-                        .foregroundColor(Color("Main_Header_Font"))
-                        .offset(x:-48)
-                    Text("\(Information.count)")
-                        .frame(width: 40)
-                        .foregroundColor(Color("Main_Header_Font"))
-                        .offset(x: 20)
-                }
-                .offset(x:25,y: -14)
-                .font(.custom(FZMS, size: 20))
+                Spacer()
             }
-            .frame(width: 245)
-            ZStack{
-                Text("@")
-                    .font(.system(size: 135, weight: .light))
-//                    .font(.system(size: <#CGFloat#>, weight: .bold))
-                    .foregroundColor(Color("Main_Header_Font"))
-
-                
-                Image("user")
-                    .resizable()
-                    .opacity(0.8)
-                    .frame(width: 85 , height: 85)
-                    .clipShape(Circle())
-                    .shadow(color: Color.gray, radius: 10, x: 5, y: 5)
-                    .offset(x:3,y:8)
-                
+            HStack{               //头像
+                Spacer()
                 ZStack{
-                    Circle()
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(Color("Red_Dot"))
-                        .shadow(color: Color.gray, radius: 5, x: 3, y: 3)
-                    Text("\(Information.count)")
-                        .foregroundColor(Color("Red_Dot_Font"))
+                    Text("@")
+                        .font(.system(size: ByWidth(Scale: 30), weight: .light))
+                        .foregroundColor(Color("Main_Header_Font"))
+                    
+                    Image("user")
+                        .resizable()
+                        .opacity(0.8)
+                        .frame(width: ByWidth(Scale: 20), height: ByWidth(Scale: 20))
+                        .clipShape(Circle())
+                        .offset(y: ByHeight(Scale: 1))
+                        .shadow(color: Color.gray, radius: 10, x: 5, y: 5)
                 }
-                .offset(x:35,y:-30)
-
             }
-            .frame(width: 140)
-            .offset(x:-10,y:-8)
+            .padding(.trailing, ByWidth(Scale: 5))
+            .padding(.bottom, ByHeight(Scale: 3))
+
         }
-        .frame(height: 120)
     }
 }
 

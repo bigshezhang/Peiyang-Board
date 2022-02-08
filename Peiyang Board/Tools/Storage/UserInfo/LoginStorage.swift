@@ -43,4 +43,4 @@ final class Login_storage: ObservableObject{
         }
     }
 }
-var login_Storage = Login_storage()
+var login_Storage = Login_storage()      //初始化登陆实例

@@ -11,16 +11,11 @@ struct LoginTextField: View {
     @Binding var username: String
     @Binding var password: String
     var body: some View {
-        
-        VStack(alignment: .center, spacing: 28){
-            Image("Login_TopPic")
-                .frame(width: 287, height: 167)
-                .padding(.bottom, 30)
+        VStack(alignment: .center) {
             Group{
                 FormField(fieldName: "Username", fieldValue: $username, img: "Login_Person", isSecure: false)
 
                 FormField(fieldName: "Password", fieldValue: $password, img: "Login_Lock", isSecure: true)
-                    .offset(y:-10)
             }
         }
 
@@ -37,42 +32,46 @@ struct FormField: View{
     var body: some View {
         if isSecure{
             VStack {
-                HStack {
-                    Image(img)
-                    if !isShowingPW {
-                        SecureField("", text: $fieldValue)
-                            .placeholder(when: fieldValue.isEmpty) {
-                                Text(fieldName)
-                                    .foregroundColor(Color("Blue_Login_Text"))
+                ZStack {
+                    HStack {
+                        Image(img)
+                        if !isShowingPW {
+                            SecureField("", text: $fieldValue)
+                                .placeholder(when: fieldValue.isEmpty) {
+                                    Text(fieldName)
+                                        .foregroundColor(Color("Blue_Login_Text"))
+                                }
+                                .foregroundColor(Color("Blue_Login_Text"))
+                                .font(.custom(RTW, size: 32))
+                                .frame(width: ByWidth(Scale: 60), alignment: .center)
+                                .padding(.leading)
+                                .autocapitalization(.none)
+                                .disableAutocorrection(true)
+                        } else{
+                            TextField("", text: $fieldValue)
+                                .placeholder(when: fieldValue.isEmpty) {
+                                    Text(fieldName).foregroundColor(Color("Blue_Login_Text"))}
+                                .foregroundColor(Color("Blue_Login_Text"))
+                                .font(.custom(RTW, size: 32))
+                                .frame(width: ByWidth(Scale: 60), alignment: .center)
+                                .padding(.leading)
+                                .autocapitalization(.none)
+                                .disableAutocorrection(true)
                             }
-                            .foregroundColor(Color("Blue_Login_Text"))
-                            .font(.custom(RTW, size: 32))
-                            .frame(width: 210, alignment: .center)
-                            .padding(.leading)
-                            .autocapitalization(.none)
-                            .disableAutocorrection(true)
-                    } else{
-                        TextField("", text: $fieldValue)
-                            .placeholder(when: fieldValue.isEmpty) {
-                                Text(fieldName).foregroundColor(Color("Blue_Login_Text"))}
-                            .foregroundColor(Color("Blue_Login_Text"))
-                            .font(.custom(RTW, size: 32))
-                            .frame(width: 210, alignment: .center)
-                            .padding(.leading)
-                            .autocapitalization(.none)
-                            .disableAutocorrection(true)
                         }
-                    
-                    Button(action: {isShowingPW.toggle()}){
+                    HStack{
+                        Spacer()
+                        Button(action: {isShowingPW.toggle()}){
                         Image(isShowingPW ? "Close_Eye" : "Open_Eye")
-                            .frame(width: 20, height: 20)
-                            .offset(x:5)//使用frame防止视图随着图片大小变化而错位
+                            .frame(width: ByWidth(Scale: 8))
+                        }
+                        .padding(.trailing, ByWidth(Scale: 15))
                     }
                 }
 
                 Path{path in
-                    path.move(to: CGPoint(x: 35, y: 0))
-                    path.addLine(to: CGPoint(x: 350, y: 0))
+                    path.move(to: CGPoint(x: ByWidth(Scale: 15), y: 0))
+                    path.addLine(to: CGPoint(x: ByWidth(Scale: 90), y: 0))
                 }
                 .strokedPath(StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round))
                 .fill(Color("Blue_Login_TextBorder"))
@@ -87,15 +86,15 @@ struct FormField: View{
                             Text("Username").foregroundColor(Color("Blue_Login_Text"))}
                         .foregroundStyle(Color("Blue_Login_Text"))
                         .font(.custom(RTW, size: 32))
-                        .frame(width: 239, alignment: .center)
+                        .frame(width: ByWidth(Scale: 60), alignment: .center)
                         .padding(.leading)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
                 }
                 
                 Path{path in
-                    path.move(to: CGPoint(x: 35, y: 0))
-                    path.addLine(to: CGPoint(x: 350, y: 0))
+                    path.move(to: CGPoint(x: ByWidth(Scale: 15), y: 0))
+                    path.addLine(to: CGPoint(x: ByWidth(Scale: 90), y: 0))
                 }
                 .strokedPath(StrokeStyle(lineWidth: 2.5, lineCap: .round, lineJoin: .round))
                 .fill(Color("Blue_Login_TextBorder"))
@@ -104,12 +103,12 @@ struct FormField: View{
         }
     }
 }
-//
+
 //struct LoginTextField_Previews: PreviewProvider {
-//    @State var username = ""
-//    @State var password = ""
+//    @State var username2 = ""
+//    @State var password2 = ""
 //    static var previews: some View {
-//        LoginTextField(username: $username , password: $password)
+//        LoginTextField(username: $username2, password: $password2)
 //    }
 //}
 

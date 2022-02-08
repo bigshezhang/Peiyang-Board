@@ -25,7 +25,7 @@ struct MainWeekIndicator: View {
         VStack {
             Image(systemName: "triangle")
                 .rotationEffect(.degrees(180))
-                .padding(.bottom,20)
+                .padding(.bottom,15)
 //                .offset(y:ByHeight(Scale: -2.5))
             ScrollView(.horizontal,showsIndicators: false) {
                 HStack{
@@ -38,31 +38,9 @@ struct MainWeekIndicator: View {
             .frame(width: ScreenWidth, height: ByHeight(Scale:5))
 
             Image(systemName: "triangle")
-                .padding(.top,20)
+                .padding(.top,15)
 //                .offset(y:ByHeight(Scale: 2.5))
         }
-
-//        .offset(x: offset)
-//        .animation(Animation.default, value: 1)
-//        .frame(width: 2000, alignment: .center)
-//        .gesture(
-//            DragGesture()
-//                .updating($isDragging, body: {_, out, _ in
-//                    out = true
-//                })
-//                .onChanged({value in
-//                    offset = isDragging ? value.translation.width : 0
-//                    if(isDragging){
-//                        maxoffset = max(maxoffset, offset)
-//                    } else {
-//                        storedoffset = storedoffset + maxoffset
-//                        print("MAx",maxoffset)
-//                        maxoffset = 0
-//
-//                    }
-//                    print(offset)
-//                })
-//        )
     }
 }
 

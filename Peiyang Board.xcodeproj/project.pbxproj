@@ -21,7 +21,6 @@
 		E0760B002794F3BC002281D1 /* Peiyang-Board-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0760AFF2794F3BC002281D1 /* Peiyang-Board-Info.plist */; };
 		E0760B032794F485002281D1 /* NewMainPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0760B022794F485002281D1 /* NewMainPageHeader.swift */; };
 		E078BB512793B53E000D3AD0 /* Loginpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB502793B53E000D3AD0 /* Loginpage.swift */; };
-		E078BB532793C07D000D3AD0 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB522793C07D000D3AD0 /* LoginPage.swift */; };
 		E078BB552793C54E000D3AD0 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB542793C54E000D3AD0 /* Font.swift */; };
 		E078BB572793D0A5000D3AD0 /* RegisterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB562793D0A5000D3AD0 /* RegisterTextField.swift */; };
 		E078BB592793D0BA000D3AD0 /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078BB582793D0BA000D3AD0 /* RegisterPage.swift */; };
@@ -39,9 +38,11 @@
 		E0A10B9E278DE9A700EC1D08 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10B9D278DE9A700EC1D08 /* Information.swift */; };
 		E0A10BA0278DE9AC00EC1D08 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10B9F278DE9AC00EC1D08 /* Users.swift */; };
 		E0A10BA8278DEAD900EC1D08 /* Current_Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A10BA7278DEAD900EC1D08 /* Current_Time.swift */; };
+		E0B6F6D627B110EC00E4F996 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B6F6D527B110EC00E4F996 /* SplashView.swift */; };
+		E0B6F6D827B114E700E4F996 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B6F6D727B114E700E4F996 /* LoginPage.swift */; };
 		E0CBF47A279542AA00407207 /* ScreenBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBF479279542AA00407207 /* ScreenBounds.swift */; };
 		E0CBF47C27954EA400407207 /* MainWeekIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBF47B27954EA400407207 /* MainWeekIndicator.swift */; };
-		E0D6D3DC278DB3110040D1C8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6D3DB278DB3110040D1C8 /* SplashView.swift */; };
+		E0D493102797954600C80F61 /* Notis_init.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D4930F2797954600C80F61 /* Notis_init.swift */; };
 		E0D6D3DE278DB6200040D1C8 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0D6D3DD278DB6200040D1C8 /* View.xib */; };
 		E0DF9C4A278DE16F00B22E18 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF9C49278DE16F00B22E18 /* Weather.swift */; };
 		E0DF9C4C278DE1C500B22E18 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF9C4B278DE1C500B22E18 /* WeatherManager.swift */; };
@@ -67,7 +68,6 @@
 		E0760AFF2794F3BC002281D1 /* Peiyang-Board-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Peiyang-Board-Info.plist"; sourceTree = "<group>"; };
 		E0760B022794F485002281D1 /* NewMainPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMainPageHeader.swift; sourceTree = "<group>"; };
 		E078BB502793B53E000D3AD0 /* Loginpage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loginpage.swift; sourceTree = "<group>"; };
-		E078BB522793C07D000D3AD0 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		E078BB542793C54E000D3AD0 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		E078BB562793D0A5000D3AD0 /* RegisterTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextField.swift; sourceTree = "<group>"; };
 		E078BB582793D0BA000D3AD0 /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
@@ -86,9 +86,11 @@
 		E0A10B9D278DE9A700EC1D08 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		E0A10B9F278DE9AC00EC1D08 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		E0A10BA7278DEAD900EC1D08 /* Current_Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current_Time.swift; sourceTree = "<group>"; };
+		E0B6F6D527B110EC00E4F996 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E0B6F6D727B114E700E4F996 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		E0CBF479279542AA00407207 /* ScreenBounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBounds.swift; sourceTree = "<group>"; };
 		E0CBF47B27954EA400407207 /* MainWeekIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeekIndicator.swift; sourceTree = "<group>"; };
-		E0D6D3DB278DB3110040D1C8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E0D4930F2797954600C80F61 /* Notis_init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notis_init.swift; sourceTree = "<group>"; };
 		E0D6D3DD278DB6200040D1C8 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		E0DF9C49278DE16F00B22E18 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		E0DF9C4B278DE1C500B22E18 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
@@ -139,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				E0515C9E278B44CC00A8BB6F /* Peiyang_BoardApp.swift */,
-				E0D6D3DB278DB3110040D1C8 /* SplashView.swift */,
+				E0B6F6D527B110EC00E4F996 /* SplashView.swift */,
 				E079D4632792C1FC00074B8A /* Font */,
 				E079D4622792C1D500074B8A /* Playground */,
 				E0C698B9278BE3A9004E40BE /* Tools */,
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				E05379152796AC76009E28C9 /* InitAll.swift */,
+				E0D4930F2797954600C80F61 /* Notis_init.swift */,
 			);
 			path = Init;
 			sourceTree = "<group>";
@@ -286,7 +289,7 @@
 		E079D45B2791BCD400074B8A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E078BB522793C07D000D3AD0 /* LoginPage.swift */,
+				E0B6F6D727B114E700E4F996 /* LoginPage.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -489,21 +492,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0D6D3DC278DB3110040D1C8 /* SplashView.swift in Sources */,
 				E0888FB2278DE92A009B5998 /* Network.swift in Sources */,
 				E078BB552793C54E000D3AD0 /* Font.swift in Sources */,
+				E0D493102797954600C80F61 /* Notis_init.swift in Sources */,
 				E0DF9C4A278DE16F00B22E18 /* Weather.swift in Sources */,
 				E0A10B9E278DE9A700EC1D08 /* Information.swift in Sources */,
 				E0A10BA0278DE9AC00EC1D08 /* Users.swift in Sources */,
 				E09866CA278E057A00383645 /* Storage.swift in Sources */,
 				E079D4612792477100074B8A /* LoginTextField.swift in Sources */,
 				E09866CC278E057A00383645 /* LoginStorage.swift in Sources */,
-				E078BB532793C07D000D3AD0 /* LoginPage.swift in Sources */,
 				E078BB512793B53E000D3AD0 /* Loginpage.swift in Sources */,
 				E0515C9F278B44CC00A8BB6F /* Peiyang_BoardApp.swift in Sources */,
 				E0A10BA8278DEAD900EC1D08 /* Current_Time.swift in Sources */,
 				E0E76CA52795A092005C0AC0 /* NotiStorage.swift in Sources */,
 				E078BB592793D0BA000D3AD0 /* RegisterPage.swift in Sources */,
+				E0B6F6D627B110EC00E4F996 /* SplashView.swift in Sources */,
 				E0DF9C4C278DE1C500B22E18 /* WeatherManager.swift in Sources */,
 				E0760B032794F485002281D1 /* NewMainPageHeader.swift in Sources */,
 				E078BB572793D0A5000D3AD0 /* RegisterTextField.swift in Sources */,
@@ -519,6 +522,7 @@
 				E0760AF5279468E3002281D1 /* MainPageHeader.swift in Sources */,
 				E0888FAF278DE882009B5998 /* LocalizedKey_Extension.swift in Sources */,
 				E0760AFE27948483002281D1 /* NumberToChinese.swift in Sources */,
+				E0B6F6D827B114E700E4F996 /* LoginPage.swift in Sources */,
 				E0888FAE278DE882009B5998 /* Localizable.swift in Sources */,
 				E0515CB1278B4A0D00A8BB6F /* HomeView.swift in Sources */,
 				E079D45627919AD100074B8A /* MainView.swift in Sources */,

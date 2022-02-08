@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct MainView: View {
+    init(){
+        //UITabBar.appearance().backgroundImage = UIImage()
+        //UITabBar.appearance().backgroundColor = UIColor.white
+       // UITabBar.appearance().shadowImage = UIImage()
+
+    }
+    
+    //去除TabView背景色
+    
     var body: some View {
-        
         NavigationView {
             Footer_View()
         }
