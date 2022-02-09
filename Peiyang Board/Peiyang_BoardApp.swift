@@ -10,7 +10,6 @@ import Foundation
 
 @main       //程序入口
 struct Peiyang_BoardApp: App {
-    
     var body: some Scene {
         WindowGroup {
             SplashView()    //调用开屏页

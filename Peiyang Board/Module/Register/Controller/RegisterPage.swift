@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RegisterPage: View {
+
     @State var turnToLogin = false
     @State var register_Success = false
     @State var username = ""

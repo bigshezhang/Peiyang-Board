@@ -14,64 +14,71 @@ struct LoginPage: View {
     @State var password = ""
 
     var body: some View {
-        if(!turnToRegister && !login_Success) {
-            VStack{
-                HStack{
-                    Spacer()
-                    Image("LoginView_Head")
-                        .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 210)
-                        .overlay(
-                            Text("注册")
-                                .font(.system(size: 32, weight: .bold))
-                                .foregroundColor(Color("Blue_Register_Font"))
-                                .offset(x: 37, y: 12)
-                        )
-                        .onTapGesture {
-                            toRegister()
-                    }
-                }
-                Spacer()
-                
-                Group {
-                    LoginTextField(username: $username, password: $password)
-                    HStack {
+        ZStack{
+            if(!turnToRegister && !login_Success) {
+                ZStack {
+                    VStack{
+                        HStack{
+                            Spacer()
+                            Image("LoginView_Head")
+                                .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 210)
+                                .overlay(
+                                    Text("注册")
+                                        .font(.system(size: 32, weight: .bold))
+                                        .foregroundColor(Color("Blue_Register_Font"))
+                                        .offset(x: 37, y: 12)
+                                )
+                                .onTapGesture {
+                                    toRegister()
+                            }
+                        }
                         Spacer()
-                        Text("forget your password")
-                            .foregroundColor(Color("Blue_Login_Text"))
-                            .font(.custom(RTW, size: 17))
-                            .offset(x:-35,y:-10)
-                            .padding(.bottom, 20)
+                    }
+                    
+                    VStack {
+                        Image("Login_TopPic")
+                            .frame(width: 287, height: 167)
+                            .padding(.bottom, 30)
+                        
+                        LoginTextField(username: $username, password: $password)
+                        
+                        HStack {
+                            Spacer()
+                            Text("forget your password")
+                                .foregroundColor(Color("Blue_Login_Text"))
+                                .font(.custom(RTW, size: 17))
+                                .padding(.trailing, ByWidth(Scale: 15))
+                        }
+                        HStack {
+                            Spacer()
+                            Button(action: get_Login){
+                                Image("Submit_Login")
+                                    .overlay(
+                                        Text("提交")
+                                            .font(.system(size: 30,weight: .bold))
+                                            .foregroundColor(Color("Blue_Register_Font"))
+                                    )
+                            }
+                            .padding(.trailing, ByWidth(Scale: 12))
+                        }
+                    }
+                    .padding(.bottom, ByHeight(Scale: 10))
+                    
+                    VStack {
+                        Spacer()
+                        Image("LoginView_Foot")
                     }
                 }
-                .offset(y: -59.7)
-                HStack {
-                    Spacer()
-                    Button(action: get_Login){
-                        Image("Submit_Login")
-                            .frame(width: 98, height: 45)
-                            .overlay(
-                                Text("提交")
-                                    .font(.system(size: 30,weight: .bold))
-                                    .foregroundColor(Color("Blue_Register_Font"))
-                                    .offset(y: -3)
-                            )
-                    }
-                    .offset(x:-33, y:-78)
-                }
-                Image("LoginView_Foot")
-            }
-            .ignoresSafeArea(.all)
-            .frame(height: UIScreen.main.bounds.height)
-        }
-          else if turnToRegister {
+            } else if turnToRegister {
                 RegisterPage()
                   .environmentObject(Login_storage())
-        }
-               else if (!turnToRegister && login_Success){
-                    MainView()
+            } else if (!turnToRegister && login_Success){
+                MainView()
             }
+        }
+        .ignoresSafeArea(.all)
     }
     func toRegister() {
         withAnimation(.easeIn(duration: 0.0)){
